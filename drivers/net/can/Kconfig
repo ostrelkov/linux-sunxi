@@ -110,6 +110,13 @@ config PCH_CAN
 	  is an IOH for x86 embedded processor (Intel Atom E6xx series).
 	  This driver can access CAN bus.
 
+config CAN_SUNXI
+	tristate "Sun7i, Sun4i CAN bus controller"
+	depends on ARCH_SUN4I || ARCH_SUN7I
+	default n
+	---help---
+	  This is the Sun7i, Sun4i Allwinner CAN BUS driver.
+
 source "drivers/net/can/mscan/Kconfig"
 
 source "drivers/net/can/sja1000/Kconfig"
