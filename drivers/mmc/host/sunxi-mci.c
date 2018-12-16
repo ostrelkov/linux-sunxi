@@ -2011,10 +2011,9 @@ static struct sunxi_mmc_platform_data sw_mci_pdata[4] = {
 			#endif
 			| MMC_CAP_SDIO_IRQ
 			| MMC_CAP_SET_XPC_330 | MMC_CAP_DRIVER_TYPE_A,
-		.caps2 = MMC_CAP2_HS200_1_8V_SDR,
 		.f_min = 400000,
-		.f_max = 120000000,
-		.f_ddr_max = 50000000,
+		.f_max = 50000000,
+		.f_ddr_max = 47000000,
 		.dma_tl= 0x20070008,
 	},
 	[3] = {
