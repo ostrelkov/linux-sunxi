@@ -1,0 +1,2593 @@
+patching file drivers/video/sunxi/disp/disp_video.c
+[sunxi-3.4_like_armbian ae11813] Applied patch: 'sun7i-default/0001-arm-sunxi-disp-Fix-division-by-zero.patch'
+ 3 files changed, 79 insertions(+), 4 deletions(-)
+ create mode 100644 armbian_patches.log
+ create mode 100755 use_and_commit_patches.sh
+patching file drivers/video/sunxi/disp/disp_layer.c
+[sunxi-3.4_like_armbian 5287ea8] Applied patch: 'sun7i-default/0001-arm-sunxi-disp-Fix-typo-in-get_src_window.patch'
+ 2 files changed, 7 insertions(+), 2 deletions(-)
+patching file drivers/hid/Kconfig
+Hunk #1 succeeded at 645 with fuzz 2 (offset -98 lines).
+patching file drivers/hid/Makefile
+Hunk #1 succeeded at 80 (offset -30 lines).
+patching file drivers/hid/hid-core.c
+Hunk #1 succeeded at 1681 with fuzz 2 (offset -55 lines).
+patching file drivers/hid/hid-ids.h
+Hunk #1 succeeded at 809 (offset -78 lines).
+patching file drivers/hid/hid-xinmo.c
+[sunxi-3.4_like_armbian b02f500] Applied patch: 'sun7i-default/0001-hid-Add-new-driver-for-non-compliant-Xin-Mo-devices.patch'
+ 6 files changed, 96 insertions(+)
+ create mode 100644 drivers/hid/hid-xinmo.c
+patching file drivers/char/sunxi_g2d/g2d.c
+[sunxi-3.4_like_armbian 75c919e] Applied patch: 'sun7i-default/0002-arm-sunxi-g2d-Fix-handle-noop-blits.patch'
+ 2 files changed, 23 insertions(+), 7 deletions(-)
+patching file drivers/input/keyboard/sunxi-ir.c
+[sunxi-3.4_like_armbian 2fb6888] Applied patch: 'sun7i-default/0002-arm-sunxi-ir-Enable-IR-autorepeat.patch'
+ 2 files changed, 4 insertions(+)
+patching file drivers/video/sunxi/disp/de_fe.c
+[sunxi-3.4_like_armbian e396743] Applied patch: 'sun7i-default/0003-arm-sunxi-disp-Fix-csc-calculations.patch'
+ 2 files changed, 7 insertions(+), 4 deletions(-)
+patching file drivers/net/usb/Kconfig
+patching file drivers/net/usb/Makefile
+patching file drivers/net/usb/ax88179_178a.c
+patching file drivers/net/usb/ax88179_178a.h
+[sunxi-3.4_like_armbian 2ea4cc5] Applied patch: 'sun7i-default/0004-ax88179_178a-USB-3.0-Ethernet.patch'
+ 5 files changed, 2563 insertions(+)
+ create mode 100644 drivers/net/usb/ax88179_178a.c
+ create mode 100644 drivers/net/usb/ax88179_178a.h
+patching file drivers/staging/zcache/Kconfig
+patching file drivers/staging/zram/Kconfig
+patching file drivers/staging/zram/zram_drv.c
+patching file drivers/staging/zsmalloc/Kconfig
+patching file drivers/staging/zsmalloc/zsmalloc-main.c
+patching file drivers/staging/zsmalloc/zsmalloc_int.h
+[sunxi-3.4_like_armbian a705c6a] Applied patch: 'sun7i-default/0008-Fix-zram-and-zcache-to-compile-on-non-x86-architectu.patch'
+ 7 files changed, 96 insertions(+), 52 deletions(-)
+patching file drivers/gpu/mali/ump/Kbuild
+patching file drivers/gpu/mali/ump/arch-ca7-virtex820-m400-2/config.h
+patching file drivers/gpu/mali/ump/arch-ca8-virtex820-m400-1/config.h
+patching file drivers/gpu/mali/ump/common/ump_kernel_api.c
+patching file drivers/gpu/mali/ump/common/ump_kernel_types.h
+patching file drivers/gpu/mali/ump/common/ump_uk_types.h
+patching file drivers/gpu/mali/ump/common/ump_ukk.h
+patching file drivers/gpu/mali/ump/linux/ump_ioctl.h
+patching file drivers/gpu/mali/ump/linux/ump_kernel_linux.c
+patching file drivers/gpu/mali/ump/linux/ump_kernel_memory_backend_cma.c
+patching file drivers/gpu/mali/ump/linux/ump_kernel_memory_backend_cma.h
+patching file drivers/gpu/mali/ump/linux/ump_memory_backend.c
+patching file drivers/gpu/mali/ump/linux/ump_ukk_wrappers.c
+patching file drivers/gpu/mali/ump/linux/ump_ukk_wrappers.h
+[sunxi-3.4_like_armbian 978b356] Applied patch: 'sun7i-default/0009-Added-new-backend-based-on-CMA-for-the-Mali-UMP-memo.patch'
+ 15 files changed, 374 insertions(+), 19 deletions(-)
+ create mode 100644 drivers/gpu/mali/ump/linux/ump_kernel_memory_backend_cma.c
+ create mode 100644 drivers/gpu/mali/ump/linux/ump_kernel_memory_backend_cma.h
+patching file Documentation/cgroups/cpusets.txt
+patching file Makefile
+patching file arch/arm/mm/alignment.c
+patching file arch/mips/boot/compressed/decompress.c
+patching file arch/mips/kernel/mcount.S
+patching file arch/parisc/Makefile
+patching file arch/s390/kvm/kvm-s390.c
+patching file arch/x86/kernel/smpboot.c
+patching file block/genhd.c
+patching file block/partition-generic.c
+Hunk #1 succeeded at 216 (offset 5 lines).
+Hunk #2 succeeded at 270 (offset 16 lines).
+patching file drivers/acpi/processor_idle.c
+patching file drivers/ata/ahci.c
+patching file drivers/ata/ata_piix.c
+patching file drivers/base/regmap/regmap.c
+patching file drivers/bluetooth/hci_ldisc.c
+patching file drivers/bluetooth/hci_uart.h
+patching file drivers/gpu/drm/i915/intel_bios.c
+patching file drivers/gpu/drm/i915/intel_crt.c
+patching file drivers/gpu/drm/i915/intel_lvds.c
+patching file drivers/gpu/drm/radeon/radeon_atombios.c
+patching file drivers/gpu/drm/vmwgfx/vmwgfx_fifo.c
+patching file drivers/input/mouse/elantech.c
+patching file drivers/input/mouse/synaptics.c
+patching file drivers/input/mouse/synaptics.h
+patching file drivers/input/serio/i8042-x86ia64io.h
+patching file drivers/input/serio/serport.c
+patching file drivers/md/dm-crypt.c
+patching file drivers/net/can/at91_can.c
+patching file drivers/net/can/flexcan.c
+patching file drivers/net/ethernet/intel/ixgbevf/ixgbevf_main.c
+patching file drivers/net/wireless/rtlwifi/rtl8192c/dm_common.c
+patching file drivers/net/wireless/rtlwifi/rtl8192cu/sw.c
+patching file drivers/scsi/libiscsi.c
+patching file drivers/scsi/scsi_error.c
+patching file drivers/target/iscsi/iscsi_target.c
+patching file drivers/target/iscsi/iscsi_target_parameters.c
+patching file drivers/usb/core/hub.c
+patching file drivers/usb/dwc3/core.c
+patching file drivers/usb/host/xhci-hub.c
+patching file drivers/usb/host/xhci-mem.c
+patching file drivers/usb/serial/ftdi_sio.c
+patching file drivers/usb/serial/ftdi_sio_ids.h
+patching file drivers/usb/serial/sierra.c
+patching file drivers/usb/storage/unusual_devs.h
+Hunk #3 succeeded at 1123 (offset 6 lines).
+Hunk #4 succeeded at 2132 (offset 183 lines).
+Hunk #5 succeeded at 2155 (offset 183 lines).
+patching file drivers/uwb/lc-dev.c
+patching file drivers/xen/manage.c
+patching file fs/buffer.c
+patching file fs/ext4/ext4.h
+patching file fs/ext4/namei.c
+patching file fs/ext4/resize.c
+patching file fs/namei.c
+patching file fs/namespace.c
+patching file fs/nfs/nfs4proc.c
+patching file fs/nfsd/vfs.c
+patching file fs/nilfs2/inode.c
+patching file fs/ocfs2/dlm/dlmmaster.c
+patching file fs/pnode.c
+patching file include/linux/cpuset.h
+patching file include/linux/jiffies.h
+patching file include/linux/mount.h
+patching file include/linux/sched.h
+Hunk #1 succeeded at 1839 (offset 6 lines).
+Hunk #2 succeeded at 1883 with fuzz 2 (offset 19 lines).
+Hunk #3 succeeded at 1988 (offset 19 lines).
+patching file include/net/regulatory.h
+patching file init/Kconfig
+patching file kernel/cgroup.c
+Hunk #1 succeeded at 3877 (offset 39 lines).
+patching file kernel/cpuset.c
+patching file kernel/events/core.c
+patching file kernel/fork.c
+Hunk #1 succeeded at 1351 (offset 66 lines).
+Hunk #2 succeeded at 1555 (offset 75 lines).
+patching file kernel/futex.c
+Hunk #1 succeeded at 2461 (offset 1 line).
+patching file kernel/time.c
+patching file mm/migrate.c
+patching file mm/percpu-vm.c
+patching file mm/percpu.c
+patching file mm/shmem.c
+patching file mm/slab.c
+patching file net/ceph/auth_x.c
+patching file net/ceph/mon_client.c
+patching file net/core/dev.c
+patching file net/ipv4/route.c
+Hunk #2 succeeded at 981 (offset 1 line).
+Hunk #3 succeeded at 999 (offset 1 line).
+Hunk #4 succeeded at 1011 (offset 1 line).
+Hunk #5 succeeded at 1028 (offset 1 line).
+Hunk #6 succeeded at 1093 (offset 1 line).
+Hunk #7 succeeded at 1177 (offset 1 line).
+Hunk #8 succeeded at 1313 (offset 1 line).
+patching file net/ipv6/udp.c
+Hunk #1 succeeded at 1367 (offset 1 line).
+patching file net/l2tp/l2tp_ppp.c
+patching file net/wireless/nl80211.c
+patching file scripts/tags.sh
+patching file sound/core/pcm_lib.c
+patching file sound/pci/hda/patch_realtek.c
+patching file sound/soc/samsung/i2s.c
+patching file sound/soc/soc-core.c
+[sunxi-3.4_like_armbian d3a50f4] Applied patch: 'sun7i-default/0010-patch-3.4.104-105.patch'
+ 87 files changed, 931 insertions(+), 367 deletions(-)
+patching file Documentation/lzo.txt
+patching file Makefile
+patching file arch/m68k/mm/hwtest.c
+patching file arch/mips/mm/tlbex.c
+patching file arch/mips/oprofile/backtrace.c
+patching file arch/powerpc/kernel/entry_64.S
+patching file arch/s390/kvm/interrupt.c
+patching file arch/x86/include/asm/desc.h
+patching file arch/x86/include/asm/elf.h
+patching file arch/x86/include/asm/kvm_host.h
+patching file arch/x86/include/asm/page_32_types.h
+patching file arch/x86/include/asm/page_64_types.h
+patching file arch/x86/include/asm/vmx.h
+patching file arch/x86/kernel/apic/apic.c
+patching file arch/x86/kernel/cpu/common.c
+patching file arch/x86/kernel/cpu/intel.c
+patching file arch/x86/kernel/dumpstack_64.c
+patching file arch/x86/kernel/entry_64.S
+patching file arch/x86/kernel/kvm.c
+patching file arch/x86/kernel/kvmclock.c
+patching file arch/x86/kernel/tls.c
+patching file arch/x86/kernel/traps.c
+patching file arch/x86/kernel/tsc.c
+patching file arch/x86/kvm/emulate.c
+patching file arch/x86/kvm/i8254.c
+patching file arch/x86/kvm/mmu.c
+patching file arch/x86/kvm/svm.c
+patching file arch/x86/kvm/vmx.c
+patching file arch/x86/kvm/x86.c
+patching file arch/x86/kvm/x86.h
+patching file arch/xtensa/include/asm/unistd.h
+patching file block/blk-settings.c
+patching file block/scsi_ioctl.c
+patching file drivers/ata/ahci.c
+patching file drivers/ata/libata-sff.c
+patching file drivers/ata/pata_serverworks.c
+patching file drivers/base/core.c
+patching file drivers/base/firmware_class.c
+patching file drivers/base/regmap/regmap-debugfs.c
+patching file drivers/base/regmap/regmap.c
+patching file drivers/bluetooth/btusb.c
+patching file drivers/char/random.c
+patching file drivers/cpufreq/cpufreq.c
+Hunk #2 succeeded at 848 (offset 19 lines).
+patching file drivers/edac/mpc85xx_edac.c
+patching file drivers/firewire/core-cdev.c
+patching file drivers/gpu/drm/radeon/evergreen.c
+patching file drivers/gpu/drm/vmwgfx/vmwgfx_kms.c
+patching file drivers/hv/channel.c
+patching file drivers/hv/connection.c
+patching file drivers/infiniband/ulp/srpt/ib_srpt.c
+patching file drivers/input/mouse/alps.c
+patching file drivers/input/mouse/synaptics.c
+patching file drivers/input/mouse/synaptics.h
+patching file drivers/input/serio/i8042-x86ia64io.h
+patching file drivers/md/dm-bufio.c
+patching file drivers/md/dm-log-userspace-transfer.c
+patching file drivers/md/dm-raid.c
+patching file drivers/net/can/dev.c
+patching file drivers/net/can/usb/esd_usb2.c
+patching file drivers/net/macvtap.c
+patching file drivers/net/ppp/ppp_generic.c
+patching file drivers/net/tun.c
+patching file drivers/net/wireless/rt2x00/rt2800.h
+patching file drivers/net/wireless/rt2x00/rt2800usb.c
+patching file drivers/net/wireless/rt2x00/rt2x00queue.c
+patching file drivers/of/address.c
+patching file drivers/of/base.c
+patching file drivers/of/selftest.c
+patching file drivers/pci/hotplug/pciehp_core.c
+patching file drivers/pci/pci-sysfs.c
+patching file drivers/pci/quirks.c
+patching file drivers/platform/x86/acer-wmi.c
+patching file drivers/platform/x86/samsung-laptop.c
+patching file drivers/power/charger-manager.c
+patching file drivers/scsi/scsi_error.c
+patching file drivers/spi/spi-dw-mid.c
+patching file drivers/spi/spi-pl022.c
+patching file drivers/staging/iio/impedance-analyzer/ad5933.c
+patching file drivers/staging/iio/meter/ade7758_ring.c
+patching file drivers/target/target_core_transport.c
+patching file drivers/tty/serial/8250/8250_pci.c
+patching file drivers/tty/serial/serial_core.c
+Hunk #1 succeeded at 358 (offset 3 lines).
+patching file drivers/tty/tty_io.c
+patching file drivers/tty/vt/consolemap.c
+patching file drivers/usb/class/cdc-acm.c
+patching file drivers/usb/core/hcd.c
+patching file drivers/usb/core/hub.c
+patching file drivers/usb/core/quirks.c
+patching file drivers/usb/dwc3/ep0.c
+patching file drivers/usb/dwc3/gadget.c
+patching file drivers/usb/dwc3/gadget.h
+patching file drivers/usb/host/xhci-pci.c
+patching file drivers/usb/serial/cp210x.c
+patching file drivers/usb/serial/ftdi_sio.c
+patching file drivers/usb/serial/ftdi_sio_ids.h
+patching file drivers/usb/serial/kobil_sct.c
+patching file drivers/usb/serial/opticon.c
+patching file drivers/usb/serial/option.c
+Hunk #1 succeeded at 279 (offset 10 lines).
+Hunk #2 succeeded at 378 (offset 15 lines).
+Hunk #3 succeeded at 632 (offset 41 lines).
+Hunk #4 succeeded at 1185 (offset 40 lines).
+Hunk #5 succeeded at 1664 with fuzz 1 (offset 41 lines).
+patching file drivers/usb/storage/transport.c
+patching file drivers/video/console/bitblit.c
+patching file drivers/video/console/fbcon_ccw.c
+patching file drivers/video/console/fbcon_cw.c
+patching file drivers/video/console/fbcon_ud.c
+patching file drivers/virtio/virtio_pci.c
+patching file fs/btrfs/file-item.c
+patching file fs/buffer.c
+patching file fs/ecryptfs/inode.c
+patching file fs/ext3/super.c
+patching file fs/ext4/ext4.h
+Hunk #1 succeeded at 1892 (offset 1 line).
+patching file fs/ext4/ialloc.c
+patching file fs/ext4/inode.c
+patching file fs/ext4/namei.c
+patching file fs/ext4/resize.c
+patching file fs/ext4/super.c
+patching file fs/ext4/xattr.c
+patching file fs/ioprio.c
+patching file fs/lockd/mon.c
+patching file fs/namespace.c
+patching file fs/nfs/inode.c
+patching file fs/nfs/nfs4proc.c
+patching file fs/nfs/nfs4renewd.c
+patching file fs/nfs/nfs4state.c
+patching file fs/nfsd/nfs4proc.c
+patching file fs/notify/fanotify/fanotify_user.c
+patching file fs/super.c
+patching file fs/ubifs/commit.c
+patching file fs/ubifs/log.c
+patching file fs/ubifs/master.c
+patching file fs/ubifs/super.c
+patching file fs/ubifs/ubifs.h
+patching file include/drm/drm_pciids.h
+patching file include/linux/blkdev.h
+patching file include/linux/compiler-gcc.h
+patching file include/linux/compiler-gcc5.h
+patching file include/linux/compiler-intel.h
+patching file include/linux/khugepaged.h
+patching file include/linux/mm.h
+Hunk #1 succeeded at 954 (offset 1 line).
+patching file include/linux/of.h
+patching file include/linux/oom.h
+patching file include/linux/string.h
+patching file include/linux/usb/quirks.h
+patching file include/net/ipv6.h
+Hunk #1 succeeded at 508 (offset 23 lines).
+patching file kernel/audit_tree.c
+patching file kernel/freezer.c
+patching file kernel/futex.c
+Hunk #1 succeeded at 213 (offset 1 line).
+Hunk #2 succeeded at 487 (offset 1 line).
+Hunk #3 succeeded at 1408 (offset 1 line).
+Hunk #4 succeeded at 1495 (offset 1 line).
+Hunk #5 succeeded at 1506 (offset 1 line).
+Hunk #6 succeeded at 1584 (offset 1 line).
+Hunk #7 succeeded at 1601 (offset 1 line).
+patching file kernel/posix-timers.c
+patching file kernel/power/hibernate.c
+Hunk #1 succeeded at 488 (offset 2 lines).
+patching file kernel/power/process.c
+Hunk #1 succeeded at 119 (offset 5 lines).
+Hunk #2 succeeded at 149 (offset 5 lines).
+Hunk #3 succeeded at 160 (offset 5 lines).
+patching file kernel/trace/trace_syscalls.c
+patching file lib/bitmap.c
+patching file lib/lzo/lzo1x_decompress_safe.c
+Hunk #3 succeeded at 100 (offset 2 lines).
+Hunk #4 succeeded at 114 (offset 2 lines).
+Hunk #5 succeeded at 135 (offset 2 lines).
+Hunk #6 succeeded at 160 (offset 2 lines).
+Hunk #7 succeeded at 187 (offset 2 lines).
+Hunk #8 succeeded at 199 with fuzz 1 (offset 4 lines).
+Hunk #9 succeeded at 207 (offset 4 lines).
+Hunk #10 succeeded at 216 (offset 4 lines).
+Hunk #11 succeeded at 229 (offset 4 lines).
+patching file lib/string.c
+patching file mm/huge_memory.c
+patching file mm/memory.c
+patching file mm/mmap.c
+Hunk #1 succeeded at 832 (offset 6 lines).
+Hunk #2 succeeded at 851 (offset 6 lines).
+Hunk #3 succeeded at 1827 (offset 7 lines).
+Hunk #4 succeeded at 1878 (offset 7 lines).
+patching file mm/oom_kill.c
+patching file mm/page_alloc.c
+Hunk #1 succeeded at 2038 (offset 56 lines).
+patching file mm/page_cgroup.c
+patching file mm/percpu.c
+patching file mm/truncate.c
+patching file net/bluetooth/smp.c
+patching file net/ceph/crypto.c
+patching file net/ipv4/ip_output.c
+patching file net/ipv6/Makefile
+patching file net/ipv6/output_core.c
+patching file net/mac80211/iface.c
+patching file net/mac80211/rx.c
+patching file security/integrity/evm/evm_main.c
+patching file security/selinux/hooks.c
+Hunk #1 succeeded at 443 (offset 7 lines).
+Hunk #2 succeeded at 452 (offset 7 lines).
+patching file sound/core/pcm_compat.c
+patching file sound/core/pcm_native.c
+patching file sound/pci/emu10k1/emu10k1_callback.c
+patching file sound/soc/codecs/sgtl5000.c
+patching file sound/soc/codecs/sgtl5000.h
+patching file sound/soc/sh/fsi.c
+patching file sound/usb/card.c
+patching file sound/usb/quirks-table.h
+patching file virt/kvm/iommu.c
+patching file virt/kvm/kvm_main.c
+[sunxi-3.4_like_armbian ebcd1c4] Applied patch: 'sun7i-default/0011-patch-3.4.105-106.patch'
+ 180 files changed, 2331 insertions(+), 708 deletions(-)
+ create mode 100644 Documentation/lzo.txt
+ create mode 100644 include/linux/compiler-gcc5.h
+ create mode 100644 net/ipv6/output_core.c
+patching file drivers/media/rc/Kconfig
+patching file drivers/media/rc/Makefile
+patching file drivers/media/rc/sunxi_lirc_new.c
+patching file drivers/media/rc/sunxi_lirc_new.h
+[sunxi-3.4_like_armbian b8e1cae] Applied patch: 'sun7i-default/0012-Add-rc-core-driver-for-A20-in-tree.patch'
+ 5 files changed, 428 insertions(+)
+ create mode 100644 drivers/media/rc/sunxi_lirc_new.c
+ create mode 100644 drivers/media/rc/sunxi_lirc_new.h
+patching file Documentation/kernel-parameters.txt
+Hunk #1 succeeded at 988 (offset 9 lines).
+patching file Makefile
+patching file arch/alpha/mm/fault.c
+patching file arch/arm/mm/proc-xscale.S
+patching file arch/avr32/mm/fault.c
+patching file arch/cris/mm/fault.c
+patching file arch/frv/mm/fault.c
+patching file arch/ia64/mm/fault.c
+patching file arch/m32r/mm/fault.c
+patching file arch/m68k/mm/fault.c
+patching file arch/microblaze/mm/fault.c
+patching file arch/mips/kernel/irq_cpu.c
+patching file arch/mips/kernel/smp.c
+patching file arch/mips/loongson/common/Makefile
+patching file arch/mips/mm/fault.c
+patching file arch/mn10300/mm/fault.c
+patching file arch/openrisc/mm/fault.c
+patching file arch/parisc/mm/fault.c
+patching file arch/powerpc/mm/fault.c
+patching file arch/powerpc/platforms/cell/spu_fault.c
+patching file arch/powerpc/platforms/cell/spufs/inode.c
+patching file arch/powerpc/xmon/xmon.c
+patching file arch/s390/mm/fault.c
+patching file arch/score/mm/fault.c
+patching file arch/sh/mm/fault_32.c
+patching file arch/sh/mm/tlbflush_64.c
+patching file arch/sparc/mm/fault_32.c
+patching file arch/sparc/mm/fault_64.c
+patching file arch/tile/mm/fault.c
+patching file arch/um/kernel/trap.c
+patching file arch/x86/include/asm/ldt.h
+patching file arch/x86/include/asm/msr-index.h
+patching file arch/x86/kernel/cpu/amd.c
+patching file arch/x86/kernel/cpu/mshyperv.c
+patching file arch/x86/kernel/kprobes.c
+patching file arch/x86/kernel/process_64.c
+patching file arch/x86/kernel/tls.c
+patching file arch/x86/mm/fault.c
+patching file arch/x86/mm/mmap.c
+patching file arch/x86/um/sys_call_table_32.c
+patching file arch/x86/um/sys_call_table_64.c
+patching file arch/x86/vdso/vma.c
+patching file arch/xtensa/mm/fault.c
+patching file block/genhd.c
+patching file crypto/af_alg.c
+patching file drivers/ata/ahci.c
+patching file drivers/ata/libata-core.c
+patching file drivers/ata/libata-sff.c
+patching file drivers/ata/sata_dwc_460ex.c
+patching file drivers/ata/sata_fsl.c
+patching file drivers/ata/sata_sil24.c
+patching file drivers/base/bus.c
+patching file drivers/base/core.c
+patching file drivers/block/drbd/drbd_req.c
+patching file drivers/bluetooth/ath3k.c
+patching file drivers/bluetooth/btusb.c
+patching file drivers/gpio/gpiolib.c
+patching file drivers/gpu/drm/i915/i915_gem.c
+patching file drivers/gpu/drm/i915/intel_lvds.c
+patching file drivers/gpu/drm/radeon/radeon_kms.c
+patching file drivers/gpu/drm/radeon/radeon_ttm.c
+patching file drivers/gpu/drm/vmwgfx/vmwgfx_fence.c
+patching file drivers/hid/hid-roccat-pyra.c
+patching file drivers/hv/vmbus_drv.c
+patching file drivers/i2c/busses/i2c-davinci.c
+patching file drivers/input/joystick/xpad.c
+patching file drivers/input/serio/i8042-x86ia64io.h
+patching file drivers/input/serio/i8042.c
+patching file drivers/iommu/intel-iommu.c
+patching file drivers/mfd/tc6393xb.c
+patching file drivers/mtd/ubi/upd.c
+patching file drivers/net/can/dev.c
+patching file drivers/net/can/usb/peak_usb/pcan_usb_core.c
+patching file drivers/net/can/usb/peak_usb/pcan_usb_pro.c
+patching file drivers/net/wireless/ath/ath5k/qcu.c
+patching file drivers/net/wireless/ath/ath9k/hw.h
+patching file drivers/net/wireless/ath/ath9k/mac.c
+patching file drivers/pci/probe.c
+patching file drivers/pci/quirks.c
+patching file drivers/platform/x86/hp_accel.c
+patching file drivers/regulator/core.c
+patching file drivers/s390/char/con3215.c
+patching file drivers/scsi/NCR5380.c
+patching file drivers/scsi/aha1740.c
+patching file drivers/scsi/atari_NCR5380.c
+patching file drivers/scsi/bnx2fc/bnx2fc_fcoe.c
+patching file drivers/scsi/megaraid.c
+patching file drivers/scsi/megaraid/megaraid_sas_base.c
+patching file drivers/scsi/sd.c
+patching file drivers/scsi/storvsc_drv.c
+patching file drivers/scsi/sun3_NCR5380.c
+patching file drivers/spi/spi-dw-mid.c
+patching file drivers/spi/spi-dw.c
+patching file drivers/staging/comedi/drivers/cb_pcidas64.c
+patching file drivers/staging/iio/events.h
+patching file drivers/target/iscsi/iscsi_target_util.c
+patching file drivers/tty/serial/samsung.c
+Hunk #1 succeeded at 528 (offset 4 lines).
+patching file drivers/usb/class/cdc-acm.c
+patching file drivers/usb/core/config.c
+patching file drivers/usb/core/inode.c
+patching file drivers/usb/core/otg_whitelist.h
+patching file drivers/usb/core/quirks.c
+patching file drivers/usb/dwc3/gadget.c
+patching file drivers/usb/host/pci-quirks.c
+patching file drivers/usb/host/xhci-pci.c
+patching file drivers/usb/host/xhci-ring.c
+patching file drivers/usb/host/xhci.c
+patching file drivers/usb/host/xhci.h
+patching file drivers/usb/renesas_usbhs/mod_gadget.c
+patching file drivers/usb/serial/console.c
+patching file drivers/usb/serial/cp210x.c
+patching file drivers/usb/serial/ftdi_sio.c
+patching file drivers/usb/serial/ftdi_sio_ids.h
+patching file drivers/usb/serial/keyspan.c
+patching file drivers/usb/serial/ssu100.c
+patching file drivers/usb/storage/scsiglue.c
+patching file drivers/usb/storage/unusual_devs.h
+Hunk #1 succeeded at 2123 (offset 183 lines).
+Hunk #2 succeeded at 2139 (offset 183 lines).
+patching file drivers/video/logo/logo.c
+patching file drivers/virtio/virtio.c
+patching file drivers/virtio/virtio_pci.c
+patching file fs/9p/vfs_inode_dotl.c
+patching file fs/affs/amigaffs.c
+patching file fs/autofs4/expire.c
+patching file fs/autofs4/root.c
+patching file fs/binfmt_elf.c
+patching file fs/btrfs/disk-io.c
+patching file fs/btrfs/extent-tree.c
+patching file fs/ceph/dir.c
+patching file fs/ceph/inode.c
+patching file fs/cifs/inode.c
+patching file fs/coda/cache.c
+patching file fs/dcache.c
+patching file fs/debugfs/inode.c
+patching file fs/ecryptfs/crypto.c
+patching file fs/ecryptfs/file.c
+patching file fs/ecryptfs/main.c
+patching file fs/exportfs/expfs.c
+patching file fs/ext4/fsync.c
+patching file fs/fs-writeback.c
+patching file fs/isofs/rock.c
+patching file fs/jfs/jfs_dtree.c
+patching file fs/libfs.c
+patching file fs/ncpfs/dir.c
+patching file fs/ncpfs/ioctl.c
+patching file fs/ncpfs/ncplib_kernel.h
+patching file fs/nfs/getroot.c
+patching file fs/nfsd/nfs4callback.c
+patching file fs/nilfs2/nilfs.h
+patching file fs/nilfs2/segment.c
+patching file fs/nilfs2/segment.h
+patching file fs/notify/fsnotify.c
+patching file fs/notify/inode_mark.c
+patching file fs/ocfs2/aops.c
+patching file fs/ocfs2/dcache.c
+patching file fs/proc/stat.c
+patching file fs/proc/task_mmu.c
+Hunk #1 succeeded at 1047 (offset 62 lines).
+patching file fs/udf/dir.c
+patching file fs/udf/inode.c
+patching file fs/udf/namei.c
+patching file fs/udf/symlink.c
+patching file fs/udf/udfdecl.h
+patching file fs/udf/unicode.c
+patching file include/linux/dcache.h
+patching file include/linux/device.h
+Hunk #1 succeeded at 839 (offset 4 lines).
+patching file include/linux/kernel_stat.h
+patching file include/linux/libata.h
+patching file include/linux/mm.h
+Hunk #3 succeeded at 1458 (offset 1 line).
+patching file include/linux/rmap.h
+patching file include/linux/sysfs.h
+patching file include/linux/time.h
+patching file include/linux/usb/quirks.h
+patching file include/linux/usb_usual.h
+patching file include/linux/virtio.h
+patching file include/linux/writeback.h
+patching file include/net/sctp/sctp.h
+patching file include/net/sctp/sm.h
+patching file include/scsi/scsi_device.h
+patching file include/sound/ak4113.h
+patching file include/sound/ak4114.h
+patching file kernel/cgroup.c
+Hunk #1 succeeded at 928 (offset 30 lines).
+Hunk #2 succeeded at 962 (offset 30 lines).
+patching file kernel/irq/internals.h
+patching file kernel/irq/irqdesc.c
+patching file kernel/irq/proc.c
+patching file kernel/sched/rt.c
+patching file kernel/time.c
+patching file kernel/time/ntp.c
+patching file lib/checksum.c
+patching file mm/ksm.c
+patching file mm/memory.c
+patching file mm/mmap.c
+Hunk #2 succeeded at 1737 (offset 7 lines).
+patching file mm/page-writeback.c
+patching file mm/rmap.c
+patching file net/bluetooth/l2cap_core.c
+patching file net/caif/chnl_net.c
+patching file net/compat.c
+patching file net/core/dev.c
+patching file net/ipv6/ip6_fib.c
+patching file net/mac80211/rx.c
+patching file net/netfilter/ipvs/ip_vs_core.c
+patching file net/sctp/associola.c
+patching file net/sctp/sm_make_chunk.c
+patching file net/sctp/sm_statefuns.c
+patching file net/socket.c
+patching file net/sunrpc/svcsock.c
+patching file net/wireless/nl80211.c
+patching file scripts/recordmcount.pl
+patching file security/keys/encrypted-keys/encrypted.c
+patching file security/keys/gc.c
+patching file security/selinux/selinuxfs.c
+patching file sound/core/seq/seq_dummy.c
+patching file sound/i2c/other/ak4113.c
+patching file sound/i2c/other/ak4114.c
+patching file sound/pci/hda/hda_intel.c
+patching file sound/pci/hda/patch_sigmatel.c
+patching file sound/soc/atmel/atmel_ssc_dai.c
+patching file sound/soc/codecs/sgtl5000.c
+patching file sound/soc/codecs/sigmadsp.c
+patching file sound/soc/codecs/wm8960.c
+patching file sound/usb/midi.c
+patching file sound/usb/mixer.c
+patching file sound/usb/mixer_maps.c
+[sunxi-3.4_like_armbian 2719778] Applied patch: 'sun7i-default/0012-patch-3.4.106-107.patch'
+ 222 files changed, 2353 insertions(+), 1068 deletions(-)
+patching file Makefile
+patching file arch/alpha/kernel/pci-sysfs.c
+patching file arch/arm/mach-at91/pm.h
+patching file arch/arm/mach-pxa/corgi.c
+patching file arch/arm/mach-pxa/hx4700.c
+patching file arch/arm/mach-pxa/poodle.c
+patching file arch/arm/mach-pxa/spitz.c
+patching file arch/arm/mach-sa1100/pm.c
+patching file arch/powerpc/boot/dts/fsl/pq3-etsec2-0.dtsi
+patching file arch/powerpc/boot/dts/fsl/pq3-etsec2-1.dtsi
+patching file arch/powerpc/boot/dts/fsl/pq3-etsec2-2.dtsi
+patching file arch/powerpc/kernel/pci_of_scan.c
+patching file arch/powerpc/platforms/powernv/pci-ioda.c
+patching file arch/powerpc/sysdev/axonram.c
+patching file arch/s390/kvm/kvm-s390.c
+patching file arch/sparc/kernel/pci.c
+patching file arch/x86/Kconfig
+Hunk #1 succeeded at 131 (offset 2 lines).
+patching file arch/x86/crypto/aesni-intel_glue.c
+patching file arch/x86/kernel/entry_64.S
+patching file arch/x86/kernel/reboot.c
+patching file arch/x86/kernel/traps.c
+patching file arch/x86/kvm/emulate.c
+patching file arch/x86/vdso/vdso32/sigreturn.S
+patching file drivers/acpi/video.c
+patching file drivers/block/nbd.c
+patching file drivers/bluetooth/ath3k.c
+patching file drivers/bluetooth/btusb.c
+patching file drivers/char/virtio_console.c
+patching file drivers/cpufreq/speedstep-lib.c
+patching file drivers/cpufreq/speedstep-smi.c
+patching file drivers/edac/sb_edac.c
+patching file drivers/gpio/gpio-tps65912.c
+patching file drivers/gpu/drm/radeon/atombios_dp.c
+patching file drivers/gpu/drm/radeon/evergreen.c
+patching file drivers/gpu/drm/radeon/r100.c
+patching file drivers/gpu/drm/radeon/r600.c
+patching file drivers/gpu/drm/radeon/radeon_bios.c
+patching file drivers/gpu/drm/radeon/radeon_cs.c
+patching file drivers/gpu/drm/radeon/rs600.c
+patching file drivers/gpu/drm/radeon/si.c
+patching file drivers/gpu/drm/vmwgfx/vmwgfx_drv.c
+patching file drivers/infiniband/core/umem.c
+patching file drivers/infiniband/core/uverbs_main.c
+patching file drivers/infiniband/hw/mlx4/mad.c
+patching file drivers/infiniband/hw/qib/qib.h
+patching file drivers/infiniband/hw/qib/qib_eeprom.c
+patching file drivers/infiniband/hw/qib/qib_iba6120.c
+patching file drivers/infiniband/hw/qib/qib_iba7220.c
+patching file drivers/infiniband/hw/qib/qib_iba7322.c
+patching file drivers/infiniband/hw/qib/qib_init.c
+patching file drivers/infiniband/hw/qib/qib_sysfs.c
+patching file drivers/input/mouse/synaptics.c
+patching file drivers/md/dm-io.c
+patching file drivers/md/dm-raid1.c
+patching file drivers/md/dm-snap.c
+patching file drivers/md/dm.c
+patching file drivers/mtd/ubi/misc.c
+patching file drivers/net/can/dev.c
+patching file drivers/net/ethernet/amd/pcnet32.c
+patching file drivers/net/ethernet/broadcom/bnx2x/bnx2x_main.c
+patching file drivers/net/team/team.c
+patching file drivers/net/wireless/ath/ath5k/reset.c
+patching file drivers/net/xen-netback/xenbus.c
+patching file drivers/pci/hotplug.c
+patching file drivers/pci/probe.c
+patching file drivers/pci/quirks.c
+patching file drivers/pci/rom.c
+patching file drivers/pci/setup-bus.c
+patching file drivers/pci/setup-res.c
+patching file drivers/pcmcia/i82092.c
+patching file drivers/pcmcia/yenta_socket.c
+patching file drivers/scsi/be2iscsi/be_main.c
+patching file drivers/scsi/hpsa.c
+patching file drivers/scsi/libsas/sas_discover.c
+patching file drivers/scsi/scsi_lib.c
+patching file drivers/scsi/sg.c
+patching file drivers/scsi/sym53c8xx_2/sym_glue.c
+patching file drivers/spi/spidev.c
+patching file drivers/staging/comedi/comedi_compat32.c
+patching file drivers/staging/vt6655/rf.c
+patching file drivers/target/iscsi/iscsi_target_tq.c
+patching file drivers/target/target_core_pscsi.c
+patching file drivers/target/tcm_fc/tfc_io.c
+patching file drivers/tty/pty.c
+patching file drivers/tty/serial/8250/8250_pci.c
+patching file drivers/tty/tty_io.c
+patching file drivers/tty/tty_ioctl.c
+patching file drivers/tty/vt/vt.c
+patching file drivers/usb/class/cdc-acm.c
+patching file drivers/usb/core/buffer.c
+patching file drivers/usb/core/devio.c
+patching file drivers/usb/core/driver.c
+patching file drivers/usb/core/hcd.c
+patching file drivers/usb/core/usb.c
+patching file drivers/usb/gadget/inode.c
+patching file drivers/usb/host/isp1760-hcd.c
+patching file drivers/usb/host/xhci-hub.c
+patching file drivers/usb/host/xhci-pci.c
+patching file drivers/usb/host/xhci-ring.c
+patching file drivers/usb/host/xhci.h
+patching file drivers/usb/serial/bus.c
+patching file drivers/usb/serial/cp210x.c
+patching file drivers/usb/serial/ftdi_sio.c
+patching file drivers/usb/serial/ftdi_sio_ids.h
+patching file drivers/video/arkfb.c
+patching file drivers/video/s3fb.c
+patching file drivers/video/vt8623fb.c
+patching file drivers/xen/xen-pciback/conf_space.c
+patching file drivers/xen/xen-pciback/conf_space.h
+patching file drivers/xen/xen-pciback/conf_space_header.c
+patching file fs/autofs4/dev-ioctl.c
+patching file fs/cifs/file.c
+patching file fs/debugfs/inode.c
+patching file fs/ecryptfs/file.c
+patching file fs/exec.c
+Hunk #2 succeeded at 1343 (offset 7 lines).
+patching file fs/fuse/dev.c
+Hunk #1 succeeded at 721 (offset 4 lines).
+Hunk #2 succeeded at 1638 (offset 4 lines).
+patching file fs/hfsplus/brec.c
+patching file fs/jffs2/scan.c
+patching file fs/namei.c
+patching file fs/nfs/callback_xdr.c
+patching file fs/nfs/delegation.c
+patching file fs/nilfs2/btree.c
+patching file fs/ocfs2/file.c
+patching file fs/splice.c
+patching file include/linux/blk_types.h
+patching file include/linux/fsnotify.h
+patching file include/linux/pci.h
+patching file include/linux/usb/hcd.h
+patching file kernel/debug/kdb/kdb_main.c
+patching file kernel/events/core.c
+patching file kernel/printk.c
+Hunk #1 succeeded at 130 (offset 4 lines).
+Hunk #2 succeeded at 1553 (offset 55 lines).
+patching file kernel/sched/core.c
+patching file kernel/softirq.c
+patching file kernel/trace/ftrace.c
+patching file mm/hugetlb.c
+patching file mm/memory.c
+patching file mm/mmap.c
+patching file mm/nommu.c
+patching file mm/page-writeback.c
+patching file mm/slub.c
+patching file net/can/af_can.c
+patching file net/core/rtnetlink.c
+patching file net/ipv6/route.c
+patching file net/irda/ircomm/ircomm_tty.c
+patching file net/mac80211/agg-rx.c
+patching file net/mac80211/ieee80211_i.h
+patching file net/mac80211/rx.c
+patching file net/mac80211/sta_info.h
+patching file net/mac80211/tx.c
+patching file net/netfilter/ipvs/ip_vs_ftp.c
+patching file net/netfilter/ipvs/ip_vs_sync.c
+patching file net/netfilter/nf_queue.c
+patching file net/netfilter/xt_socket.c
+Hunk #1 succeeded at 217 (offset 12 lines).
+Hunk #2 succeeded at 238 (offset 12 lines).
+Hunk #3 succeeded at 273 with fuzz 2 (offset 12 lines).
+Hunk #4 succeeded at 299 (offset 11 lines).
+patching file net/openvswitch/datapath.c
+patching file net/sunrpc/cache.c
+patching file net/sunrpc/xprtrdma/verbs.c
+patching file net/wireless/nl80211.c
+patching file net/xfrm/xfrm_output.c
+patching file security/selinux/selinuxfs.c
+patching file security/smack/smack.h
+patching file security/smack/smack_lsm.c
+patching file sound/core/control.c
+patching file sound/core/pcm_native.c
+patching file sound/pci/hda/patch_realtek.c
+patching file sound/pci/riptide/riptide.c
+patching file sound/pci/rme9652/hdspm.c
+patching file sound/soc/codecs/adav80x.c
+patching file sound/soc/codecs/ak4641.c
+patching file sound/soc/codecs/cs4271.c
+patching file sound/soc/codecs/sgtl5000.c
+patching file sound/soc/codecs/wm2000.c
+patching file sound/soc/codecs/wm8731.c
+patching file sound/soc/codecs/wm8903.c
+patching file sound/soc/codecs/wm8904.c
+patching file sound/soc/codecs/wm8955.c
+patching file sound/soc/codecs/wm8960.c
+patching file sound/soc/omap/omap-pcm.c
+patching file sound/usb/mixer_quirks.c
+patching file sound/usb/quirks-table.h
+patching file tools/perf/Makefile
+[sunxi-3.4_like_armbian 9ea995f] Applied patch: 'sun7i-default/0013-patch-3.4.107-108.patch'
+ 181 files changed, 1477 insertions(+), 768 deletions(-)
+patching file drivers/misc/pwm-sunxi.h
+[sunxi-3.4_like_armbian 6258086] Applied patch: 'sun7i-default/0014-modified-pwm-sunxi.h.patch'
+ 2 files changed, 202 insertions(+), 198 deletions(-)
+ rewrite drivers/misc/pwm-sunxi.h (60%)
+patching file Documentation/filesystems/Locking
+patching file Documentation/filesystems/overlayfs.txt
+patching file Documentation/filesystems/vfs.txt
+patching file MAINTAINERS
+patching file fs/Kconfig
+patching file fs/Makefile
+patching file fs/ecryptfs/main.c
+patching file fs/namei.c
+patching file fs/namespace.c
+patching file fs/open.c
+patching file fs/overlayfs/Kconfig
+patching file fs/overlayfs/Makefile
+patching file fs/overlayfs/copy_up.c
+patching file fs/overlayfs/dir.c
+patching file fs/overlayfs/inode.c
+patching file fs/overlayfs/overlayfs.h
+patching file fs/overlayfs/readdir.c
+patching file fs/overlayfs/super.c
+patching file fs/splice.c
+patching file include/linux/fs.h
+Hunk #1 succeeded at 491 (offset 2 lines).
+Hunk #2 succeeded at 1517 (offset 2 lines).
+Hunk #3 succeeded at 1679 (offset 2 lines).
+Hunk #4 succeeded at 2038 (offset 2 lines).
+Hunk #5 succeeded at 2231 (offset 2 lines).
+patching file include/linux/mount.h
+[sunxi-3.4_like_armbian 0b2bca4] Applied patch: 'sun7i-default/0015-linux-sunxi-3.4.108-overlayfs.patch'
+ 22 files changed, 3032 insertions(+), 43 deletions(-)
+ create mode 100644 Documentation/filesystems/overlayfs.txt
+ create mode 100644 fs/overlayfs/Kconfig
+ create mode 100644 fs/overlayfs/Makefile
+ create mode 100644 fs/overlayfs/copy_up.c
+ create mode 100644 fs/overlayfs/dir.c
+ create mode 100644 fs/overlayfs/inode.c
+ create mode 100644 fs/overlayfs/overlayfs.h
+ create mode 100644 fs/overlayfs/readdir.c
+ create mode 100644 fs/overlayfs/super.c
+patching file drivers/misc/pwm-sunxi.c
+[sunxi-3.4_like_armbian 04e8a7f] Applied patch: 'sun7i-default/0015-rewrite-function-bestprescale.patch'
+ 2 files changed, 944 insertions(+), 914 deletions(-)
+ rewrite drivers/misc/pwm-sunxi.c (61%)
+patching file Documentation/networking/rds.txt
+patching file Documentation/pinctrl.txt
+patching file Makefile
+patching file arch/arm/boot/dts/imx27.dtsi
+patching file arch/arm/include/asm/elf.h
+patching file arch/arm/mach-pxa/Kconfig
+patching file arch/arm/mach-pxa/Makefile
+patching file arch/arm/mach-pxa/include/mach/lubbock.h
+patching file arch/arm/mach-pxa/include/mach/mainstone.h
+patching file arch/arm/mach-pxa/lubbock.c
+patching file arch/arm/mach-pxa/mainstone.c
+patching file arch/arm/mach-pxa/pxa_cplds_irqs.c
+patching file arch/arm/net/bpf_jit_32.c
+patching file arch/c6x/kernel/time.c
+patching file arch/mips/kernel/irq.c
+patching file arch/mips/power/hibernate.S
+patching file arch/powerpc/kernel/cacheinfo.c
+patching file arch/powerpc/kernel/vmlinux.lds.S
+patching file arch/powerpc/perf/callchain.c
+patching file arch/powerpc/platforms/pseries/dlpar.c
+patching file arch/s390/crypto/ghash_s390.c
+patching file arch/s390/kernel/suspend.c
+patching file arch/s390/kvm/priv.c
+patching file arch/x86/include/asm/i387.h
+patching file arch/x86/include/asm/iommu_table.h
+patching file arch/x86/kernel/cpu/mcheck/mce.c
+patching file arch/x86/kernel/i387.c
+patching file arch/x86/kvm/mmu.c
+patching file arch/x86/kvm/vmx.c
+patching file arch/x86/kvm/x86.c
+patching file arch/x86/net/bpf_jit_comp.c
+patching file block/genhd.c
+patching file drivers/ata/ahci.c
+patching file drivers/ata/ahci.h
+patching file drivers/ata/libahci.c
+Hunk #1 succeeded at 1148 (offset 9 lines).
+Hunk #2 succeeded at 1162 (offset 9 lines).
+Hunk #3 succeeded at 1680 (offset 9 lines).
+patching file drivers/ata/libata-core.c
+patching file drivers/ata/libata-eh.c
+patching file drivers/bluetooth/ath3k.c
+patching file drivers/bluetooth/btusb.c
+patching file drivers/char/ipmi/ipmi_si_intf.c
+patching file drivers/gpu/drm/i915/i915_gem.c
+patching file drivers/gpu/drm/radeon/atombios_crtc.c
+patching file drivers/gpu/drm/radeon/evergreen.c
+patching file drivers/gpu/drm/radeon/ni.c
+patching file drivers/gpu/drm/radeon/r600.c
+patching file drivers/gpu/drm/radeon/radeon_cs.c
+patching file drivers/gpu/drm/radeon/rv770.c
+patching file drivers/gpu/drm/radeon/si.c
+patching file drivers/hv/channel.c
+patching file drivers/hv/channel_mgmt.c
+patching file drivers/infiniband/core/cma.c
+patching file drivers/infiniband/core/umem.c
+patching file drivers/infiniband/hw/mlx4/qp.c
+patching file drivers/input/mouse/elantech.c
+patching file drivers/input/mouse/elantech.h
+patching file drivers/lguest/core.c
+patching file drivers/md/dm-crypt.c
+patching file drivers/md/md.c
+patching file drivers/md/raid5.c
+patching file drivers/memstick/core/mspro_block.c
+patching file drivers/mmc/core/core.c
+Hunk #1 succeeded at 2443 with fuzz 1 (offset 73 lines).
+patching file drivers/mmc/host/atmel-mci.c
+patching file drivers/mtd/ubi/cdev.c
+patching file drivers/mtd/ubi/eba.c
+patching file drivers/mtd/ubi/wl.c
+patching file drivers/net/ethernet/intel/e1000/e1000_main.c
+patching file drivers/net/wireless/rtlwifi/rtl8192cu/sw.c
+patching file drivers/net/wireless/rtlwifi/usb.c
+patching file drivers/platform/x86/compal-laptop.c
+patching file drivers/scsi/3w-9xxx.c
+patching file drivers/scsi/3w-9xxx.h
+patching file drivers/scsi/3w-sas.c
+patching file drivers/scsi/3w-sas.h
+patching file drivers/scsi/3w-xxxx.c
+patching file drivers/scsi/3w-xxxx.h
+patching file drivers/scsi/megaraid/megaraid_sas_fusion.c
+patching file drivers/scsi/scsi_devinfo.c
+patching file drivers/scsi/scsi_scan.c
+patching file drivers/scsi/sd.c
+patching file drivers/scsi/storvsc_drv.c
+patching file drivers/staging/ozwpan/ozusbsvc1.c
+patching file drivers/staging/panel/panel.c
+patching file drivers/target/target_core_pscsi.c
+patching file drivers/target/target_core_pscsi.h
+patching file drivers/tty/hvc/hvc_xen.c
+patching file drivers/tty/serial/of_serial.c
+patching file drivers/tty/serial/uartlite.c
+patching file drivers/tty/serial/xilinx_uartps.c
+patching file drivers/usb/class/cdc-wdm.c
+patching file drivers/usb/host/xhci-ring.c
+patching file drivers/usb/host/xhci.h
+patching file drivers/usb/musb/musb_core.c
+Hunk #1 succeeded at 1545 (offset 1 line).
+Hunk #2 succeeded at 1576 (offset 1 line).
+patching file drivers/usb/otg/otg_fsm.c
+patching file drivers/usb/serial/cp210x.c
+patching file drivers/usb/serial/ftdi_sio.c
+patching file drivers/usb/serial/ftdi_sio_ids.h
+patching file drivers/usb/serial/pl2303.c
+patching file drivers/usb/serial/pl2303.h
+patching file drivers/usb/serial/visor.c
+patching file drivers/usb/storage/unusual_devs.h
+patching file drivers/xen/events.c
+patching file firmware/ihex2fw.c
+patching file fs/binfmt_elf.c
+patching file fs/btrfs/extent-tree.c
+patching file fs/btrfs/ioctl.c
+patching file fs/btrfs/xattr.c
+patching file fs/dcache.c
+patching file fs/ext4/extents.c
+patching file fs/ext4/namei.c
+patching file fs/fhandle.c
+patching file fs/namei.c
+Hunk #1 succeeded at 1328 (offset 14 lines).
+patching file fs/nfs/callback.c
+patching file fs/nfsd/nfs4state.c
+patching file fs/nfsd/nfsctl.c
+patching file fs/nilfs2/btree.c
+patching file fs/ocfs2/dlm/dlmmaster.c
+patching file fs/omfs/inode.c
+patching file fs/pipe.c
+patching file fs/udf/inode.c
+patching file include/acpi/actypes.h
+patching file include/acpi/platform/acenv.h
+patching file include/linux/jhash.h
+patching file include/linux/libata.h
+patching file include/linux/nilfs2_fs.h
+patching file include/scsi/scsi_devinfo.h
+patching file include/sound/emu10k1.h
+patching file include/xen/events.h
+patching file kernel/ptrace.c
+patching file kernel/sched/core.c
+patching file kernel/trace/ring_buffer_benchmark.c
+patching file kernel/trace/trace_events_filter.c
+patching file mm/memory-failure.c
+patching file net/bridge/br_fdb.c
+patching file net/bridge/br_multicast.c
+patching file net/bridge/br_netfilter.c
+patching file net/ipv4/ping.c
+Hunk #1 succeeded at 153 (offset 15 lines).
+patching file net/ipv4/udp.c
+Hunk #1 succeeded at 1252 (offset 1 line).
+patching file net/ipv6/route.c
+Hunk #1 succeeded at 1658 (offset -3 lines).
+patching file net/ipv6/udp.c
+patching file net/mac80211/wep.c
+patching file net/netfilter/ipvs/ip_vs_ctl.c
+patching file net/rose/af_rose.c
+patching file net/socket.c
+patching file security/selinux/nlmsgtab.c
+patching file sound/pci/emu10k1/emu10k1.c
+patching file sound/pci/emu10k1/emu10k1_callback.c
+patching file sound/pci/emu10k1/emu10k1_main.c
+patching file sound/pci/emu10k1/emupcm.c
+patching file sound/pci/emu10k1/emuproc.c
+patching file sound/pci/emu10k1/memory.c
+patching file sound/pci/hda/hda_codec.c
+patching file sound/pci/hda/patch_conexant.c
+patching file sound/pci/hda/patch_realtek.c
+patching file sound/soc/codecs/cs4271.c
+patching file sound/soc/codecs/wm8741.c
+patching file sound/soc/codecs/wm8960.c
+patching file sound/soc/codecs/wm8994.c
+patching file sound/synth/emux/emux_oss.c
+patching file sound/synth/emux/emux_seq.c
+patching file sound/usb/mixer_maps.c
+[sunxi-3.4_like_armbian 7f13c8a] Applied patch: 'sun7i-default/0016-patch-3.4.108-109.patch'
+ 161 files changed, 1427 insertions(+), 744 deletions(-)
+ create mode 100644 arch/arm/mach-pxa/pxa_cplds_irqs.c
+patching file Documentation/networking/pktgen.txt
+patching file Makefile
+patching file arch/arm/net/bpf_jit_32.c
+patching file arch/s390/crypto/ghash_s390.c
+patching file arch/x86/include/asm/kvm_host.h
+patching file arch/x86/kvm/i8254.c
+patching file arch/x86/kvm/lapic.c
+patching file arch/x86/pci/acpi.c
+patching file drivers/acpi/acpica/utxface.c
+patching file drivers/base/regmap/regmap.c
+patching file drivers/bluetooth/ath3k.c
+patching file drivers/bluetooth/btusb.c
+patching file drivers/char/agp/intel-gtt.c
+patching file drivers/crypto/talitos.c
+patching file drivers/dma/mv_xor.c
+patching file drivers/dma/mv_xor.h
+patching file drivers/gpu/drm/i915/i915_gem.c
+patching file drivers/gpu/drm/radeon/evergreen.c
+patching file drivers/gpu/drm/radeon/ni.c
+patching file drivers/gpu/drm/radeon/r600.c
+patching file drivers/gpu/drm/radeon/radeon_cs.c
+patching file drivers/gpu/drm/radeon/radeon_irq_kms.c
+patching file drivers/gpu/drm/radeon/rv770.c
+patching file drivers/gpu/drm/radeon/si.c
+patching file drivers/infiniband/hw/qib/qib.h
+patching file drivers/infiniband/hw/qib/qib_keys.c
+patching file drivers/infiniband/hw/qib/qib_verbs.c
+patching file drivers/infiniband/hw/qib/qib_verbs.h
+patching file drivers/mmc/card/block.c
+Hunk #1 succeeded at 1378 (offset 6 lines).
+patching file drivers/mtd/maps/dc21285.c
+patching file drivers/mtd/mtd_blkdevs.c
+patching file drivers/net/ethernet/stmicro/stmmac/descs.h
+patching file drivers/net/ethernet/stmicro/stmmac/enh_desc.c
+patching file drivers/net/ethernet/stmicro/stmmac/norm_desc.c
+patching file drivers/net/ethernet/stmicro/stmmac/stmmac_main.c
+patching file drivers/net/wireless/ath/ath9k/main.c
+patching file drivers/net/wireless/rndis_wlan.c
+patching file drivers/pcmcia/topic.h
+patching file drivers/platform/x86/dell-laptop.c
+patching file drivers/platform/x86/ideapad-laptop.c
+patching file drivers/regulator/core.c
+patching file drivers/scsi/ipr.h
+patching file drivers/staging/rtl8712/rtl8712_recv.c
+patching file drivers/tty/serial/atmel_serial.c
+patching file drivers/usb/core/hub.c
+patching file drivers/usb/dwc3/ep0.c
+patching file drivers/usb/dwc3/gadget.c
+patching file drivers/watchdog/omap_wdt.c
+patching file fs/dcache.c
+patching file fs/ext4/indirect.c
+patching file fs/ext4/inode.c
+patching file fs/ext4/super.c
+patching file fs/fuse/inode.c
+patching file fs/jbd2/checkpoint.c
+patching file fs/jbd2/commit.c
+patching file fs/jbd2/journal.c
+patching file fs/namei.c
+Hunk #1 succeeded at 411 (offset 14 lines).
+Hunk #2 succeeded at 977 (offset 14 lines).
+Hunk #3 succeeded at 1063 (offset 14 lines).
+Hunk #4 succeeded at 1079 (offset 14 lines).
+Hunk #5 succeeded at 1090 (offset 14 lines).
+Hunk #6 succeeded at 1291 (offset 14 lines).
+patching file fs/nfs/nfs3xdr.c
+patching file fs/nfs/nfs4state.c
+patching file include/acpi/actypes.h
+patching file include/linux/jbd2.h
+patching file include/linux/nfs_xdr.h
+patching file include/net/sctp/structs.h
+patching file kernel/hrtimer.c
+Hunk #1 succeeded at 854 (offset 1 line).
+Hunk #2 succeeded at 1269 (offset 1 line).
+patching file kernel/rcutiny.c
+patching file kernel/trace/trace_events_filter.c
+patching file lib/bitmap.c
+patching file mm/kmemleak.c
+patching file net/9p/client.c
+patching file net/bridge/br_ioctl.c
+patching file net/bridge/br_multicast.c
+patching file net/bridge/br_stp_if.c
+patching file net/ceph/osdmap.c
+patching file net/core/pktgen.c
+patching file net/packet/af_packet.c
+patching file net/sctp/socket.c
+patching file net/sunrpc/backchannel_rqst.c
+patching file sound/soc/codecs/wm8737.c
+patching file sound/soc/codecs/wm8903.h
+patching file sound/soc/codecs/wm8955.c
+patching file sound/soc/codecs/wm8960.c
+[sunxi-3.4_like_armbian 9dd72e8] Applied patch: 'sun7i-default/0017-patch-3.4.109-110.patch'
+ 82 files changed, 618 insertions(+), 255 deletions(-)
+patching file Makefile
+patching file arch/mips/include/asm/pgtable.h
+patching file arch/mips/kernel/mips-mt-fpaff.c
+patching file arch/s390/kernel/process.c
+patching file arch/s390/kernel/sclp.S
+patching file arch/tile/kernel/setup.c
+patching file arch/x86/include/asm/desc.h
+patching file arch/x86/include/asm/kvm_host.h
+patching file arch/x86/include/asm/mmu.h
+patching file arch/x86/include/asm/mmu_context.h
+patching file arch/x86/kernel/cpu/common.c
+patching file arch/x86/kernel/ldt.c
+patching file arch/x86/kernel/process_64.c
+patching file arch/x86/kernel/step.c
+patching file arch/x86/kvm/svm.c
+patching file arch/x86/kvm/trace.h
+patching file arch/x86/kvm/vmx.c
+patching file arch/x86/kvm/x86.c
+patching file arch/x86/math-emu/fpu_entry.c
+patching file arch/x86/math-emu/fpu_system.h
+patching file arch/x86/math-emu/get_address.c
+patching file arch/x86/power/cpu.c
+patching file arch/x86/xen/enlighten.c
+patching file drivers/ata/libata-core.c
+patching file drivers/ata/libata-pmp.c
+patching file drivers/ata/libata-scsi.c
+patching file drivers/crypto/ixp4xx_crypto.c
+patching file drivers/edac/ppc4xx_edac.c
+patching file drivers/gpu/drm/drm_crtc.c
+patching file drivers/gpu/drm/radeon/radeon_combios.c
+patching file drivers/input/touchscreen/usbtouchscreen.c
+patching file drivers/isdn/i4l/isdn_ppp.c
+patching file drivers/md/dm-thin.c
+patching file drivers/md/md.c
+patching file drivers/md/persistent-data/dm-btree-internal.h
+patching file drivers/md/persistent-data/dm-btree-remove.c
+patching file drivers/md/persistent-data/dm-btree-spine.c
+patching file drivers/md/persistent-data/dm-btree.c
+patching file drivers/md/raid1.c
+patching file drivers/mmc/card/block.c
+Hunk #1 succeeded at 181 (offset -1 lines).
+patching file drivers/net/can/mcp251x.c
+patching file drivers/net/ethernet/sun/niu.c
+patching file drivers/net/ppp/ppp_generic.c
+patching file drivers/net/ppp/pptp.c
+patching file drivers/net/slip/slhc.c
+patching file drivers/net/slip/slip.c
+patching file drivers/net/virtio_net.c
+patching file drivers/scsi/libfc/fc_fcp.c
+patching file drivers/scsi/libiscsi.c
+patching file drivers/scsi/sg.c
+patching file drivers/scsi/st.c
+patching file drivers/target/iscsi/iscsi_target.c
+patching file drivers/usb/dwc3/core.h
+patching file drivers/usb/dwc3/ep0.c
+patching file drivers/usb/dwc3/gadget.c
+patching file drivers/usb/host/xhci-hub.c
+patching file drivers/usb/host/xhci-mem.c
+patching file drivers/usb/host/xhci-ring.c
+patching file drivers/usb/host/xhci.c
+patching file drivers/usb/host/xhci.h
+patching file drivers/usb/serial/cp210x.c
+patching file drivers/usb/serial/option.c
+Hunk #1 succeeded at 1808 (offset 51 lines).
+patching file drivers/usb/serial/sierra.c
+patching file drivers/usb/serial/whiteheat.c
+patching file drivers/usb/storage/unusual_devs.h
+Hunk #1 succeeded at 2202 (offset 183 lines).
+patching file drivers/vhost/vhost.c
+patching file fs/9p/vfs_inode.c
+patching file fs/9p/vfs_inode_dotl.c
+patching file fs/btrfs/inode-map.c
+patching file fs/buffer.c
+patching file fs/ext4/extents.c
+patching file fs/ext4/mballoc.c
+Hunk #1 succeeded at 4644 (offset 1 line).
+patching file fs/file_table.c
+patching file fs/hpfs/super.c
+patching file fs/internal.h
+patching file fs/ocfs2/dlmglue.c
+patching file fs/open.c
+Hunk #1 succeeded at 671 with fuzz 2 (offset -1 lines).
+Hunk #2 succeeded at 728 with fuzz 1 (offset -1 lines).
+patching file fs/super.c
+patching file include/linux/buffer_head.h
+patching file include/linux/fs.h
+Hunk #1 succeeded at 984 (offset 8 lines).
+Hunk #2 succeeded at 997 (offset 8 lines).
+Hunk #3 succeeded at 1443 (offset 8 lines).
+patching file include/linux/libata.h
+patching file include/net/af_unix.h
+patching file include/net/ip6_fib.h
+patching file include/net/sock.h
+patching file include/sound/tlv.h
+patching file ipc/msg.c
+patching file ipc/sem.c
+patching file ipc/shm.c
+patching file ipc/util.c
+patching file kernel/events/core.c
+patching file kernel/watchdog.c
+Hunk #1 succeeded at 156 (offset 2 lines).
+patching file mm/memory.c
+patching file net/atm/clip.c
+patching file net/ax25/af_ax25.c
+patching file net/core/datagram.c
+patching file net/core/dev.c
+patching file net/core/rtnetlink.c
+patching file net/core/sysctl_net_core.c
+patching file net/decnet/af_decnet.c
+patching file net/ipv4/af_inet.c
+Hunk #1 succeeded at 301 (offset 17 lines).
+patching file net/ipv4/ip_fragment.c
+patching file net/ipv4/sysctl_net_ipv4.c
+Hunk #2 succeeded at 502 (offset 15 lines).
+Hunk #3 succeeded at 725 (offset 22 lines).
+Hunk #4 succeeded at 733 (offset 22 lines).
+patching file net/ipv6/addrconf.c
+Hunk #1 succeeded at 4369 (offset 29 lines).
+Hunk #2 succeeded at 4493 (offset 29 lines).
+patching file net/ipv6/af_inet6.c
+Hunk #1 succeeded at 131 (offset 18 lines).
+patching file net/ipv6/ip6_fib.c
+patching file net/ipv6/ndisc.c
+patching file net/ipv6/route.c
+Hunk #3 succeeded at 1242 (offset -3 lines).
+Hunk #4 succeeded at 2834 (offset -6 lines).
+patching file net/irda/af_irda.c
+patching file net/key/af_key.c
+patching file net/mac80211/debugfs_netdev.c
+patching file net/netfilter/nf_conntrack_core.c
+patching file net/netfilter/nf_conntrack_expect.c
+patching file net/rds/ib_rdma.c
+patching file net/rds/info.c
+patching file net/rds/send.c
+patching file net/sctp/sm_sideeffect.c
+patching file net/sunrpc/xprt.c
+patching file net/unix/af_unix.c
+Hunk #1 succeeded at 307 (offset 1 line).
+Hunk #2 succeeded at 523 (offset 1 line).
+Hunk #3 succeeded at 761 (offset 1 line).
+Hunk #4 succeeded at 1136 (offset 1 line).
+Hunk #5 succeeded at 1577 (offset 1 line).
+Hunk #6 succeeded at 1646 (offset 1 line).
+Hunk #7 succeeded at 1661 (offset 1 line).
+Hunk #8 succeeded at 1694 (offset 1 line).
+Hunk #9 succeeded at 1744 (offset 1 line).
+Hunk #10 succeeded at 2378 (offset 1 line).
+patching file scripts/kconfig/streamline_config.pl
+patching file security/keys/gc.c
+patching file sound/usb/mixer.c
+patching file sound/usb/mixer_maps.c
+patching file sound/usb/mixer_quirks.c
+patching file sound/usb/mixer_quirks.h
+patching file sound/usb/quirks-table.h
+[sunxi-3.4_like_armbian 4e29bc8] Applied patch: 'sun7i-default/0018-patch-3.4.110-111.patch'
+ 126 files changed, 1546 insertions(+), 731 deletions(-)
+patching file Makefile
+patching file arch/arm/Makefile
+patching file arch/arm/kernel/signal.c
+patching file arch/m68k/include/asm/linkage.h
+patching file arch/mips/mm/dma-default.c
+patching file arch/powerpc/include/asm/rtas.h
+patching file arch/powerpc/kernel/rtas.c
+patching file arch/powerpc/platforms/powernv/pci.c
+patching file arch/powerpc/platforms/pseries/ras.c
+patching file arch/powerpc/sysdev/fsl_msi.c
+patching file arch/powerpc/sysdev/mpic_pasemi_msi.c
+patching file arch/powerpc/sysdev/mpic_u3msi.c
+patching file arch/powerpc/sysdev/ppc4xx_msi.c
+patching file arch/x86/crypto/ghash-clmulni-intel_glue.c
+patching file arch/x86/include/asm/msr-index.h
+patching file arch/x86/include/asm/xen/hypervisor.h
+patching file arch/x86/kernel/process_64.c
+patching file arch/x86/kernel/tsc.c
+patching file arch/x86/kvm/x86.c
+patching file arch/x86/xen/enlighten.c
+patching file arch/x86/xen/setup.c
+patching file crypto/ablkcipher.c
+patching file crypto/ahash.c
+patching file crypto/algapi.c
+patching file crypto/api.c
+patching file crypto/crypto_user.c
+patching file drivers/auxdisplay/ks0108.c
+patching file drivers/base/devres.c
+patching file drivers/base/platform.c
+patching file drivers/base/regmap/regmap-debugfs.c
+patching file drivers/block/xen-blkfront.c
+patching file drivers/gpu/drm/drm_crtc.c
+patching file drivers/gpu/drm/nouveau/nouveau_gem.c
+patching file drivers/gpu/drm/radeon/radeon_combios.c
+patching file drivers/gpu/drm/radeon/radeon_connectors.c
+patching file drivers/infiniband/core/cm.c
+patching file drivers/infiniband/core/uverbs.h
+patching file drivers/infiniband/core/uverbs_cmd.c
+patching file drivers/infiniband/core/uverbs_main.c
+patching file drivers/infiniband/hw/mlx4/ah.c
+patching file drivers/iommu/amd_iommu.c
+patching file drivers/iommu/amd_iommu_types.h
+patching file drivers/iommu/intel-iommu.c
+patching file drivers/macintosh/windfarm_core.c
+patching file drivers/md/Kconfig
+patching file drivers/md/md.c
+patching file drivers/md/persistent-data/dm-btree.c
+patching file drivers/md/raid0.c
+patching file drivers/md/raid1.c
+patching file drivers/md/raid1.h
+patching file drivers/md/raid10.c
+patching file drivers/md/raid10.h
+patching file drivers/media/rc/rc-main.c
+patching file drivers/mtd/ubi/io.c
+patching file drivers/mtd/ubi/vtbl.c
+patching file drivers/mtd/ubi/wl.c
+patching file drivers/net/wireless/ath/ath9k/init.c
+patching file drivers/net/wireless/iwlwifi/iwl-agn-lib.c
+patching file drivers/of/address.c
+patching file drivers/pci/access.c
+patching file drivers/pci/quirks.c
+patching file drivers/scsi/mvsas/mv_sas.c
+patching file drivers/spi/spi-pxa2xx.c
+patching file drivers/spi/spi.c
+Hunk #1 succeeded at 832 (offset 1 line).
+patching file drivers/tty/n_tty.c
+patching file drivers/tty/tty_io.c
+patching file drivers/usb/core/config.c
+patching file drivers/usb/core/quirks.c
+patching file drivers/usb/host/ehci-sysfs.c
+patching file drivers/usb/host/xhci-mem.c
+patching file drivers/usb/host/xhci-pci.c
+patching file drivers/usb/host/xhci-ring.c
+patching file drivers/usb/host/xhci.c
+patching file drivers/usb/serial/ftdi_sio.c
+patching file drivers/usb/serial/ftdi_sio_ids.h
+patching file fs/btrfs/inode.c
+patching file fs/ceph/super.c
+patching file fs/cifs/cifsencrypt.c
+patching file fs/cifs/cifsfs.c
+patching file fs/ecryptfs/dentry.c
+patching file fs/ext4/super.c
+patching file fs/gfs2/super.c
+patching file fs/hfs/bnode.c
+patching file fs/hfs/brec.c
+patching file fs/hfs/super.c
+patching file fs/hfsplus/bnode.c
+patching file fs/hfsplus/options.c
+patching file fs/hostfs/hostfs_kern.c
+patching file fs/hpfs/namei.c
+patching file fs/nfs/nfs4proc.c
+patching file fs/ocfs2/dlm/dlmmaster.c
+patching file fs/ocfs2/dlm/dlmrecovery.c
+patching file fs/ocfs2/super.c
+patching file fs/pipe.c
+patching file fs/reiserfs/super.c
+patching file fs/splice.c
+patching file fs/xfs/xfs_super.c
+patching file include/linux/pci.h
+patching file include/linux/seq_file.h
+patching file include/sound/wm8904.h
+patching file kernel/cgroup.c
+Hunk #1 succeeded at 1074 (offset 3 lines).
+patching file kernel/irq/proc.c
+patching file kernel/module.c
+patching file kernel/sched/core.c
+patching file kernel/sched/sched.h
+patching file kernel/time/clocksource.c
+patching file mm/filemap.c
+patching file mm/hugetlb.c
+patching file net/ipv6/xfrm6_output.c
+patching file net/mac80211/tx.c
+patching file net/sunrpc/xprtrdma/svc_rdma_sendto.c
+patching file net/sunrpc/xprtsock.c
+patching file security/selinux/hooks.c
+Hunk #1 succeeded at 1019 (offset 7 lines).
+patching file sound/arm/Kconfig
+patching file sound/soc/pxa/Kconfig
+patching file sound/synth/emux/emux_oss.c
+patching file tools/perf/util/header.c
+[sunxi-3.4_like_armbian ee6c819] Applied patch: 'sun7i-default/0018-patch-3.4.111-112.patch'
+ 118 files changed, 996 insertions(+), 267 deletions(-)
+patching file Makefile
+patching file arch/arm/mach-pxa/include/mach/pxa27x.h
+patching file arch/arm/mach-pxa/pxa27x.c
+patching file arch/arm/mm/proc-v7.S
+patching file arch/mips/include/asm/atomic.h
+patching file arch/parisc/kernel/signal.c
+patching file arch/x86/kernel/head_64.S
+patching file arch/x86/kernel/signal.c
+patching file arch/x86/kernel/verify_cpu.S
+patching file block/partitions/mac.c
+patching file crypto/ablkcipher.c
+patching file crypto/algif_hash.c
+patching file crypto/blkcipher.c
+patching file drivers/acpi/osl.c
+patching file drivers/ata/libahci.c
+Hunk #1 succeeded at 1237 (offset 9 lines).
+patching file drivers/ata/sata_sil.c
+patching file drivers/block/xen-blkback/common.h
+patching file drivers/bluetooth/ath3k.c
+patching file drivers/bluetooth/btusb.c
+patching file drivers/firewire/ohci.c
+patching file drivers/gpu/drm/radeon/radeon_irq_kms.c
+patching file drivers/gpu/vga/vgaarb.c
+patching file drivers/hid/hid-core.c
+patching file drivers/iommu/intel-iommu.c
+patching file drivers/isdn/gigaset/ser-gigaset.c
+patching file drivers/isdn/hardware/mISDN/mISDNipac.c
+patching file drivers/md/dm-mpath.c
+patching file drivers/md/persistent-data/dm-btree.c
+patching file drivers/md/raid1.c
+patching file drivers/mtd/mtdpart.c
+patching file drivers/net/can/sja1000/sja1000.c
+patching file drivers/net/ethernet/renesas/sh_eth.c
+patching file drivers/net/macvlan.c
+patching file drivers/net/phy/broadcom.c
+patching file drivers/net/wan/x25_asy.c
+patching file drivers/net/wireless/mwifiex/debugfs.c
+patching file drivers/net/xen-netback/netback.c
+patching file drivers/parisc/iommu-helpers.h
+patching file drivers/power/wm831x_power.c
+patching file drivers/scsi/megaraid/megaraid_sas.h
+patching file drivers/scsi/megaraid/megaraid_sas_base.c
+patching file drivers/scsi/scsi_sysfs.c
+patching file drivers/scsi/ses.c
+patching file drivers/spi/spi.c
+Hunk #1 succeeded at 847 (offset 1 line).
+patching file drivers/staging/iio/adc/lpc32xx_adc.c
+patching file drivers/staging/rtl8712/usb_intf.c
+patching file drivers/tty/tty_buffer.c
+patching file drivers/usb/class/usblp.c
+patching file drivers/usb/core/hub.c
+patching file drivers/usb/core/otg_whitelist.h
+patching file drivers/usb/core/quirks.c
+patching file drivers/usb/host/whci/qset.c
+patching file drivers/usb/host/xhci.c
+patching file drivers/usb/musb/musb_core.c
+Hunk #1 succeeded at 131 with fuzz 1.
+Hunk #2 succeeded at 151 (offset 1 line).
+Hunk #3 succeeded at 176 (offset 1 line).
+Hunk #4 succeeded at 191 (offset 1 line).
+patching file drivers/usb/serial/cp210x.c
+patching file drivers/usb/serial/ipaq.c
+patching file drivers/usb/serial/option.c
+Hunk #1 succeeded at 171 (offset 9 lines).
+Hunk #2 succeeded at 367 (offset 15 lines).
+Hunk #3 succeeded at 567 (offset 41 lines).
+Hunk #4 succeeded at 1092 (offset 40 lines).
+Hunk #5 succeeded at 1668 (offset 41 lines).
+patching file drivers/usb/serial/ti_usb_3410_5052.c
+patching file drivers/xen/xen-pciback/pciback.h
+patching file drivers/xen/xen-pciback/pciback_ops.c
+patching file fs/9p/vfs_inode.c
+patching file fs/binfmt_elf.c
+patching file fs/btrfs/inode.c
+patching file fs/cachefiles/rdwr.c
+patching file fs/ext4/ext4.h
+patching file fs/ext4/super.c
+patching file fs/fscache/netfs.c
+patching file fs/fscache/page.c
+patching file fs/fuse/file.c
+patching file fs/jbd2/journal.c
+patching file fs/jbd2/transaction.c
+patching file fs/nfs/inode.c
+patching file fs/ocfs2/resize.c
+patching file fs/splice.c
+patching file fs/sysv/inode.c
+patching file include/linux/acpi.h
+patching file include/linux/enclosure.h
+patching file include/linux/jbd2.h
+patching file include/linux/mm.h
+Hunk #1 succeeded at 1526 (offset 1 line).
+patching file include/linux/usb/quirks.h
+patching file include/net/af_unix.h
+patching file include/net/ip6_fib.h
+patching file include/net/ndisc.h
+patching file include/net/sctp/structs.h
+patching file include/xen/interface/io/ring.h
+patching file kernel/events/core.c
+patching file kernel/irq/manage.c
+patching file kernel/sched/core.c
+patching file kernel/time/ntp.c
+patching file kernel/time/timekeeping.c
+patching file kernel/trace/ring_buffer.c
+patching file lib/devres.c
+patching file mm/backing-dev.c
+patching file mm/hugetlb.c
+patching file mm/memory.c
+patching file mm/memory_hotplug.c
+patching file mm/vmstat.c
+Hunk #1 succeeded at 1142 (offset 3 lines).
+Hunk #2 succeeded at 1158 (offset 3 lines).
+Hunk #3 succeeded at 1208 (offset 3 lines).
+patching file net/core/datagram.c
+patching file net/core/dev.c
+patching file net/core/dst.c
+patching file net/core/neighbour.c
+patching file net/ipv4/tcp_input.c
+Hunk #2 succeeded at 3702 (offset 1 line).
+patching file net/ipv4/tcp_ipv4.c
+patching file net/ipv4/udp.c
+Hunk #1 succeeded at 1176 (offset 1 line).
+Hunk #2 succeeded at 1202 (offset 1 line).
+patching file net/ipv6/addrlabel.c
+patching file net/ipv6/af_inet6.c
+Hunk #1 succeeded at 1200 (offset 39 lines).
+Hunk #2 succeeded at 1269 (offset 45 lines).
+Hunk #3 succeeded at 1340 (offset 47 lines).
+patching file net/ipv6/ip6_fib.c
+patching file net/ipv6/ip6mr.c
+patching file net/ipv6/ndisc.c
+patching file net/ipv6/route.c
+Hunk #1 succeeded at 1227 (offset -3 lines).
+Hunk #2 succeeded at 1236 (offset -3 lines).
+Hunk #3 succeeded at 1396 (offset -3 lines).
+Hunk #4 succeeded at 2342 (offset -11 lines).
+Hunk #5 succeeded at 2476 (offset -11 lines).
+patching file net/ipv6/tunnel6.c
+patching file net/ipv6/udp.c
+patching file net/mac80211/mesh_pathtbl.c
+patching file net/mac80211/mlme.c
+patching file net/rfkill/core.c
+Hunk #3 succeeded at 853 (offset 4 lines).
+patching file net/sctp/auth.c
+patching file net/sctp/outqueue.c
+patching file net/sctp/sm_sideeffect.c
+patching file net/sctp/sm_statefuns.c
+patching file net/socket.c
+patching file net/unix/garbage.c
+patching file scripts/recordmcount.c
+patching file scripts/recordmcount.h
+patching file security/keys/keyctl.c
+patching file sound/pci/hda/hda_intel.c
+patching file sound/pci/hda/patch_sigmatel.c
+patching file sound/pci/rme96.c
+patching file sound/soc/codecs/wm8962.c
+patching file sound/usb/midi.c
+patching file sound/usb/quirks-table.h
+patching file sound/usb/quirks.c
+patching file sound/usb/usbaudio.h
+[sunxi-3.4_like_armbian 496e60d] Applied patch: 'sun7i-default/0018-patch-3.4.112-113.patch'
+ 133 files changed, 1287 insertions(+), 478 deletions(-)
+patching file Documentation/networking/ip-sysctl.txt
+Hunk #1 succeeded at 773 (offset 12 lines).
+Hunk #2 succeeded at 1000 (offset 12 lines).
+patching file include/linux/inetdevice.h
+patching file include/linux/rtnetlink.h
+Hunk #2 succeeded at 321 (offset 2 lines).
+Hunk #3 succeeded at 527 (offset 2 lines).
+Hunk #4 succeeded at 595 (offset 2 lines).
+Hunk #5 succeeded at 648 (offset 2 lines).
+patching file include/net/flow.h
+Hunk #1 succeeded at 74 (offset 2 lines).
+Hunk #2 succeeded at 97 (offset 4 lines).
+patching file include/net/ip_fib.h
+Hunk #1 succeeded at 221 (offset -2 lines).
+Hunk #2 succeeded at 230 (offset -2 lines).
+Hunk #3 succeeded at 240 (offset -2 lines).
+Hunk #4 succeeded at 284 (offset -2 lines).
+patching file include/net/netfilter/nf_nat.h
+patching file include/net/route.h
+Hunk #2 succeeded at 194 (offset 1 line).
+patching file net/bridge/br_netfilter.c
+Hunk #1 succeeded at 439 (offset 3 lines).
+patching file net/core/rtnetlink.c
+patching file net/ipv4/arp.c
+patching file net/ipv4/devinet.c
+Hunk #1 succeeded at 1003 (offset 6 lines).
+Hunk #2 succeeded at 1608 (offset 6 lines).
+patching file net/ipv4/fib_frontend.c
+Hunk #8 succeeded at 1010 (offset 1 line).
+Hunk #9 succeeded at 1049 (offset 1 line).
+patching file net/ipv4/fib_lookup.h
+patching file net/ipv4/fib_rules.c
+patching file net/ipv4/fib_semantics.c
+patching file net/ipv4/fib_trie.c
+Hunk #1 succeeded at 1278 (offset -1 lines).
+Hunk #2 succeeded at 1317 (offset -1 lines).
+Hunk #3 succeeded at 1392 (offset -1 lines).
+patching file net/ipv4/netfilter/ipt_MASQUERADE.c
+patching file net/ipv4/netfilter/nf_nat_core.c
+patching file net/ipv4/netfilter/nf_nat_standalone.c
+Hunk #1 succeeded at 252 (offset 2 lines).
+patching file net/ipv4/route.c
+Hunk #1 succeeded at 741 with fuzz 1 (offset 3 lines).
+Hunk #2 succeeded at 1455 (offset 34 lines).
+Hunk #3 succeeded at 2001 (offset 35 lines).
+Hunk #4 succeeded at 2078 (offset 35 lines).
+Hunk #5 succeeded at 2094 (offset 35 lines).
+Hunk #6 succeeded at 2166 (offset 36 lines).
+Hunk #7 succeeded at 2185 (offset 36 lines).
+Hunk #8 succeeded at 2197 (offset 36 lines).
+Hunk #9 succeeded at 2227 (offset 36 lines).
+Hunk #10 succeeded at 2259 (offset 37 lines).
+Hunk #11 succeeded at 2300 (offset 37 lines).
+Hunk #12 succeeded at 2338 (offset 37 lines).
+Hunk #13 succeeded at 2373 (offset 37 lines).
+Hunk #14 succeeded at 2387 (offset 37 lines).
+Hunk #15 succeeded at 2425 (offset 37 lines).
+Hunk #16 succeeded at 2496 (offset 38 lines).
+Hunk #17 succeeded at 2521 (offset 38 lines).
+Hunk #18 succeeded at 2575 (offset 38 lines).
+Hunk #19 succeeded at 2650 (offset 38 lines).
+Hunk #20 succeeded at 2813 (offset 39 lines).
+Hunk #21 succeeded at 2851 (offset 39 lines).
+Hunk #22 succeeded at 2880 (offset 39 lines).
+Hunk #23 succeeded at 2933 with fuzz 2 (offset 39 lines).
+Hunk #24 succeeded at 3012 (offset 40 lines).
+[sunxi-3.4_like_armbian 89f6887] Applied patch: 'sun7i-default/0020-clustering-patch-3.4-ja1.patch'
+ 21 files changed, 1320 insertions(+), 138 deletions(-)
+patching file drivers/gpio/devres.c
+patching file drivers/net/phy/Kconfig
+patching file drivers/net/phy/Makefile
+patching file drivers/net/phy/b53/Kconfig
+patching file drivers/net/phy/b53/Makefile
+patching file drivers/net/phy/b53/b53_common.c
+patching file drivers/net/phy/b53/b53_mdio.c
+patching file drivers/net/phy/b53/b53_mmap.c
+patching file drivers/net/phy/b53/b53_phy_fixup.c
+patching file drivers/net/phy/b53/b53_priv.h
+patching file drivers/net/phy/b53/b53_regs.h
+patching file drivers/net/phy/b53/b53_spi.c
+patching file drivers/net/phy/b53/b53_srab.c
+patching file drivers/net/phy/swconfig.c
+patching file drivers/net/phy/swconfig_leds.c
+patching file include/Kbuild
+patching file include/asm-generic/gpio.h
+patching file include/linux/Kbuild
+Hunk #1 succeeded at 360 (offset 1 line).
+patching file include/linux/gpio.h
+patching file include/linux/platform_data/b53.h
+patching file include/linux/switch.h
+patching file include/uapi/Kbuild
+patching file include/uapi/linux/Kbuild
+patching file include/uapi/linux/switch.h
+[sunxi-3.4_like_armbian 77001d2] Applied patch: 'sun7i-default/0020-dev-bananapi-r1.patch'
+ 25 files changed, 5421 insertions(+), 53 deletions(-)
+ create mode 100644 drivers/net/phy/b53/Kconfig
+ create mode 100644 drivers/net/phy/b53/Makefile
+ create mode 100644 drivers/net/phy/b53/b53_common.c
+ create mode 100644 drivers/net/phy/b53/b53_mdio.c
+ create mode 100644 drivers/net/phy/b53/b53_mmap.c
+ create mode 100644 drivers/net/phy/b53/b53_phy_fixup.c
+ create mode 100644 drivers/net/phy/b53/b53_priv.h
+ create mode 100644 drivers/net/phy/b53/b53_regs.h
+ create mode 100644 drivers/net/phy/b53/b53_spi.c
+ create mode 100644 drivers/net/phy/b53/b53_srab.c
+ create mode 100644 drivers/net/phy/swconfig.c
+ create mode 100644 drivers/net/phy/swconfig_leds.c
+ create mode 100644 include/linux/platform_data/b53.h
+ rewrite include/linux/switch.h (77%)
+ create mode 100644 include/uapi/Kbuild
+ create mode 100644 include/uapi/linux/Kbuild
+ create mode 100644 include/uapi/linux/switch.h
+patching file drivers/leds/ledtrig-disk.c
+patching file arch/powerpc/configs/pmac32_defconfig
+patching file arch/powerpc/configs/ppc6xx_defconfig
+patching file drivers/ata/libata-core.c
+Hunk #2 succeeded at 4867 (offset 22 lines).
+patching file drivers/ide/ide-disk.c
+patching file drivers/leds/Kconfig
+patching file drivers/leds/Makefile
+patching file drivers/macintosh/Kconfig
+patching file drivers/macintosh/via-pmu-led.c
+patching file include/linux/leds.h
+[sunxi-3.4_like_armbian 992b71a] Applied patch: 'sun7i-default/0021-IDE-led-trigger-to-generic-disk-activity.patch'
+ 11 files changed, 117 insertions(+), 20 deletions(-)
+ create mode 100644 drivers/leds/ledtrig-disk.c
+patching file drivers/hwmon/Kconfig
+patching file drivers/hwmon/Makefile
+patching file drivers/hwmon/a20-tp.c
+[sunxi-3.4_like_armbian b664ac0] Applied patch: 'sun7i-default/0022-a20-temp.patch'
+ 4 files changed, 287 insertions(+)
+ create mode 100644 drivers/hwmon/a20-tp.c
+patching file arch/arm/kernel/setup.c
+patching file drivers/net/ethernet/allwinner/gmac/gmac_core.c
+patching file drivers/net/ethernet/allwinner/gmac/gmac_desc.c
+[sunxi-3.4_like_armbian 1eec65f] Applied patch: 'sun7i-default/0024-dev-chip-id-and-gmac-fixing-mac.patch'
+ 4 files changed, 48 insertions(+), 10 deletions(-)
+patching file drivers/gpio/gpio-sunxi.c
+[sunxi-3.4_like_armbian 4464170] Applied patch: 'sun7i-default/0025-gpio.patch'
+ 2 files changed, 6 insertions(+), 5 deletions(-)
+patching file drivers/net/wireless/rtlwifi/rtl8192cu/hw.c
+Hunk #1 succeeded at 1980 with fuzz 2 (offset 34 lines).
+[sunxi-3.4_like_armbian 3dcf948] Applied patch: 'sun7i-default/0026-rt8192cu-missing-case.patch'
+ 2 files changed, 12 insertions(+)
+patching file drivers/input/touchscreen/ft5x_ts.c
+[sunxi-3.4_like_armbian 955e24f] Applied patch: 'sun7i-default/0027-banana_touch_screen.patch'
+ 2 files changed, 9 insertions(+), 2 deletions(-)
+patching file include/sound/pcm.h
+patching file sound/core/pcm_native.c
+Hunk #1 succeeded at 1765 (offset 2 lines).
+patching file sound/soc/Kconfig
+patching file sound/soc/sunxi/hdmiaudio/sndhdmi.c
+patching file sound/soc/sunxi/hdmiaudio/sndhdmi.h
+patching file sound/soc/sunxi/hdmiaudio/sunxi-hdmiaudio.c
+patching file sound/soc/sunxi/hdmiaudio/sunxi-hdmiaudio.h
+patching file sound/soc/sunxi/hdmiaudio/sunxi-hdmipcm.c
+patching file sound/soc/sunxi/hdmiaudio/sunxi-hdmipcm.h
+patching file sound/soc/sunxi/hdmiaudio/sunxi-sndhdmi.c
+patching file sound/soc/sunxi/hdmiaudio/sunxi-sndhdmi.h
+patching file sound/soc/sunxi/i2s/Kconfig
+patching file sound/soc/sunxi/i2s/sndi2s.c
+patching file sound/soc/sunxi/i2s/sndi2s.h
+patching file sound/soc/sunxi/i2s/sunxi-i2s.c
+patching file sound/soc/sunxi/i2s/sunxi-i2s.h
+patching file sound/soc/sunxi/i2s/sunxi-i2sdma.c
+patching file sound/soc/sunxi/i2s/sunxi-i2sdma.h
+patching file sound/soc/sunxi/i2s/sunxi-sndi2s.c
+patching file sound/soc/sunxi/i2s/sunxi-sndi2s.h
+patching file sound/soc/sunxi/spdif/sndspdif.c
+patching file sound/soc/sunxi/spdif/sunxi_sndspdif.c
+patching file sound/soc/sunxi/spdif/sunxi_spdif.c
+patching file sound/soc/sunxi/spdif/sunxi_spdif.h
+patching file sound/soc/sunxi/spdif/sunxi_spdma.c
+patching file sound/soc/sunxi/sunxi-codec.c
+[sunxi-3.4_like_armbian 083384e] Applied patch: 'sun7i-default/0028-nikkov-i2s-spdif-2.0.patch'
+ 27 files changed, 2508 insertions(+), 1257 deletions(-)
+ create mode 100644 sound/soc/sunxi/hdmiaudio/sndhdmi.h
+ rename sound/soc/sunxi/{i2s/sunxi-i2s.h => hdmiaudio/sunxi-hdmiaudio.h} (54%)
+ create mode 100644 sound/soc/sunxi/hdmiaudio/sunxi-hdmipcm.h
+ create mode 100644 sound/soc/sunxi/hdmiaudio/sunxi-sndhdmi.h
+ rewrite sound/soc/sunxi/i2s/sunxi-i2s.h (77%)
+ rewrite sound/soc/sunxi/spdif/sunxi_spdif.h (64%)
+patching file drivers/spi/Kconfig
+Hunk #1 succeeded at 370 (offset -11 lines).
+patching file drivers/spi/Makefile
+patching file drivers/spi/spi-sun7i.c
+[sunxi-3.4_like_armbian eaaeb5e] Applied patch: 'sun7i-default/0029-dev-spi-sun7i.patch'
+ 4 files changed, 2248 insertions(+)
+ create mode 100644 drivers/spi/spi-sun7i.c
+patching file drivers/video/sunxi/hdmi/drv_hdmi.c
+patching file sound/soc/sunxi/hdmiaudio/sndhdmi.c
+Hunk #1 succeeded at 82 (offset -3 lines).
+Hunk #2 succeeded at 128 with fuzz 1 (offset -3 lines).
+patching file sound/soc/sunxi/hdmiaudio/sunxi-hdmiaudio.c
+patching file sound/soc/sunxi/hdmiaudio/sunxi-hdmipcm.c
+[sunxi-3.4_like_armbian 38d7801] Applied patch: 'sun7i-default/0029-HDMI-8ch-and-alsa-fix-2.0.patch'
+ 5 files changed, 26 insertions(+), 13 deletions(-)
+patching file drivers/net/wireless/Kconfig
+patching file drivers/net/wireless/Makefile
+patching file drivers/net/wireless/ap6210/Kconfig
+patching file drivers/net/wireless/ap6210/Makefile
+patching file drivers/net/wireless/ap6210/aiutils.c
+patching file drivers/net/wireless/ap6210/ap6210.h
+patching file drivers/net/wireless/ap6210/ap6210_gpio.h
+patching file drivers/net/wireless/ap6210/ap6210_gpio_bt.c
+patching file drivers/net/wireless/ap6210/ap6210_gpio_wifi.c
+patching file drivers/net/wireless/ap6210/bcmevent.c
+patching file drivers/net/wireless/ap6210/bcmsdh.c
+patching file drivers/net/wireless/ap6210/bcmsdh_linux.c
+patching file drivers/net/wireless/ap6210/bcmsdh_sdmmc.c
+patching file drivers/net/wireless/ap6210/bcmsdh_sdmmc_linux.c
+patching file drivers/net/wireless/ap6210/bcmutils.c
+patching file drivers/net/wireless/ap6210/bcmwifi_channels.c
+patching file drivers/net/wireless/ap6210/dhd.h
+patching file drivers/net/wireless/ap6210/dhd_bta.c
+patching file drivers/net/wireless/ap6210/dhd_bta.h
+patching file drivers/net/wireless/ap6210/dhd_bus.h
+patching file drivers/net/wireless/ap6210/dhd_cdc.c
+patching file drivers/net/wireless/ap6210/dhd_cfg80211.c
+patching file drivers/net/wireless/ap6210/dhd_cfg80211.h
+patching file drivers/net/wireless/ap6210/dhd_common.c
+patching file drivers/net/wireless/ap6210/dhd_custom_gpio.c
+patching file drivers/net/wireless/ap6210/dhd_dbg.h
+patching file drivers/net/wireless/ap6210/dhd_gpio.c
+patching file drivers/net/wireless/ap6210/dhd_ip.c
+patching file drivers/net/wireless/ap6210/dhd_ip.h
+patching file drivers/net/wireless/ap6210/dhd_linux.c
+patching file drivers/net/wireless/ap6210/dhd_linux_sched.c
+patching file drivers/net/wireless/ap6210/dhd_pno.c
+patching file drivers/net/wireless/ap6210/dhd_pno.h
+patching file drivers/net/wireless/ap6210/dhd_proto.h
+patching file drivers/net/wireless/ap6210/dhd_sdio.c
+patching file drivers/net/wireless/ap6210/dhd_wlfc.c
+patching file drivers/net/wireless/ap6210/dhd_wlfc.h
+patching file drivers/net/wireless/ap6210/dngl_stats.h
+patching file drivers/net/wireless/ap6210/dngl_wlhdr.h
+patching file drivers/net/wireless/ap6210/hndpmu.c
+patching file drivers/net/wireless/ap6210/include/Makefile
+patching file drivers/net/wireless/ap6210/include/aidmp.h
+patching file drivers/net/wireless/ap6210/include/bcm_cfg.h
+patching file drivers/net/wireless/ap6210/include/bcm_mpool_pub.h
+patching file drivers/net/wireless/ap6210/include/bcmcdc.h
+patching file drivers/net/wireless/ap6210/include/bcmdefs.h
+patching file drivers/net/wireless/ap6210/include/bcmdevs.h
+patching file drivers/net/wireless/ap6210/include/bcmendian.h
+patching file drivers/net/wireless/ap6210/include/bcmpcispi.h
+patching file drivers/net/wireless/ap6210/include/bcmperf.h
+patching file drivers/net/wireless/ap6210/include/bcmsdbus.h
+patching file drivers/net/wireless/ap6210/include/bcmsdh.h
+patching file drivers/net/wireless/ap6210/include/bcmsdh_sdmmc.h
+patching file drivers/net/wireless/ap6210/include/bcmsdpcm.h
+patching file drivers/net/wireless/ap6210/include/bcmsdspi.h
+patching file drivers/net/wireless/ap6210/include/bcmsdstd.h
+patching file drivers/net/wireless/ap6210/include/bcmspi.h
+patching file drivers/net/wireless/ap6210/include/bcmutils.h
+patching file drivers/net/wireless/ap6210/include/bcmwifi_channels.h
+patching file drivers/net/wireless/ap6210/include/bcmwifi_rates.h
+patching file drivers/net/wireless/ap6210/include/dhdioctl.h
+patching file drivers/net/wireless/ap6210/include/epivers.h
+patching file drivers/net/wireless/ap6210/include/hndpmu.h
+patching file drivers/net/wireless/ap6210/include/hndrte_armtrap.h
+patching file drivers/net/wireless/ap6210/include/hndrte_cons.h
+patching file drivers/net/wireless/ap6210/include/hndsoc.h
+patching file drivers/net/wireless/ap6210/include/linux_osl.h
+patching file drivers/net/wireless/ap6210/include/linuxver.h
+patching file drivers/net/wireless/ap6210/include/miniopt.h
+patching file drivers/net/wireless/ap6210/include/msgtrace.h
+patching file drivers/net/wireless/ap6210/include/osl.h
+patching file drivers/net/wireless/ap6210/include/packed_section_end.h
+patching file drivers/net/wireless/ap6210/include/packed_section_start.h
+patching file drivers/net/wireless/ap6210/include/pcicfg.h
+patching file drivers/net/wireless/ap6210/include/proto/802.11.h
+patching file drivers/net/wireless/ap6210/include/proto/802.11_bta.h
+patching file drivers/net/wireless/ap6210/include/proto/802.11e.h
+patching file drivers/net/wireless/ap6210/include/proto/802.1d.h
+patching file drivers/net/wireless/ap6210/include/proto/bcmeth.h
+patching file drivers/net/wireless/ap6210/include/proto/bcmevent.h
+patching file drivers/net/wireless/ap6210/include/proto/bcmip.h
+patching file drivers/net/wireless/ap6210/include/proto/bt_amp_hci.h
+patching file drivers/net/wireless/ap6210/include/proto/eapol.h
+patching file drivers/net/wireless/ap6210/include/proto/ethernet.h
+patching file drivers/net/wireless/ap6210/include/proto/p2p.h
+patching file drivers/net/wireless/ap6210/include/proto/sdspi.h
+patching file drivers/net/wireless/ap6210/include/proto/vlan.h
+patching file drivers/net/wireless/ap6210/include/proto/wpa.h
+patching file drivers/net/wireless/ap6210/include/sbchipc.h
+patching file drivers/net/wireless/ap6210/include/sbconfig.h
+patching file drivers/net/wireless/ap6210/include/sbhnddma.h
+patching file drivers/net/wireless/ap6210/include/sbpcmcia.h
+patching file drivers/net/wireless/ap6210/include/sbsdio.h
+patching file drivers/net/wireless/ap6210/include/sbsdpcmdev.h
+patching file drivers/net/wireless/ap6210/include/sbsocram.h
+patching file drivers/net/wireless/ap6210/include/sdio.h
+patching file drivers/net/wireless/ap6210/include/sdioh.h
+patching file drivers/net/wireless/ap6210/include/sdiovar.h
+patching file drivers/net/wireless/ap6210/include/siutils.h
+patching file drivers/net/wireless/ap6210/include/trxhdr.h
+patching file drivers/net/wireless/ap6210/include/typedefs.h
+patching file drivers/net/wireless/ap6210/include/wlfc_proto.h
+patching file drivers/net/wireless/ap6210/include/wlioctl.h
+patching file drivers/net/wireless/ap6210/linux_osl.c
+patching file drivers/net/wireless/ap6210/sbutils.c
+patching file drivers/net/wireless/ap6210/siutils.c
+patching file drivers/net/wireless/ap6210/siutils_priv.h
+patching file drivers/net/wireless/ap6210/uamp_api.h
+patching file drivers/net/wireless/ap6210/wl_android.c
+patching file drivers/net/wireless/ap6210/wl_android.h
+patching file drivers/net/wireless/ap6210/wl_cfg80211.c
+patching file drivers/net/wireless/ap6210/wl_cfg80211.h
+patching file drivers/net/wireless/ap6210/wl_cfgp2p.c
+patching file drivers/net/wireless/ap6210/wl_cfgp2p.h
+patching file drivers/net/wireless/ap6210/wl_iw.c
+patching file drivers/net/wireless/ap6210/wl_iw.h
+patching file drivers/net/wireless/ap6210/wl_linux_mon.c
+patching file drivers/net/wireless/ap6210/wldev_common.c
+patching file drivers/net/wireless/ap6210/wldev_common.h
+patching file firmware/Makefile
+patching file firmware/ap6210/bcm20710a1.hcd.ihex
+patching file firmware/ap6210/fw_bcm40181a2.bin.ihex
+patching file firmware/ap6210/fw_bcm40181a2_apsta.bin.ihex
+patching file firmware/ap6210/fw_bcm40181a2_p2p.bin.ihex
+patching file firmware/ap6210/nvram_ap6210.txt.ihex
+[sunxi-3.4_like_armbian b53cb81] Applied patch: 'sun7i-default/0030-ap6210_module-cubietruck.patch'
+ 126 files changed, 126366 insertions(+)
+ create mode 100644 drivers/net/wireless/ap6210/Kconfig
+ create mode 100644 drivers/net/wireless/ap6210/Makefile
+ create mode 100644 drivers/net/wireless/ap6210/aiutils.c
+ create mode 100644 drivers/net/wireless/ap6210/ap6210.h
+ create mode 100644 drivers/net/wireless/ap6210/ap6210_gpio.h
+ create mode 100644 drivers/net/wireless/ap6210/ap6210_gpio_bt.c
+ create mode 100644 drivers/net/wireless/ap6210/ap6210_gpio_wifi.c
+ create mode 100644 drivers/net/wireless/ap6210/bcmevent.c
+ create mode 100644 drivers/net/wireless/ap6210/bcmsdh.c
+ create mode 100644 drivers/net/wireless/ap6210/bcmsdh_linux.c
+ create mode 100644 drivers/net/wireless/ap6210/bcmsdh_sdmmc.c
+ create mode 100644 drivers/net/wireless/ap6210/bcmsdh_sdmmc_linux.c
+ create mode 100644 drivers/net/wireless/ap6210/bcmutils.c
+ create mode 100644 drivers/net/wireless/ap6210/bcmwifi_channels.c
+ create mode 100644 drivers/net/wireless/ap6210/dhd.h
+ create mode 100644 drivers/net/wireless/ap6210/dhd_bta.c
+ create mode 100644 drivers/net/wireless/ap6210/dhd_bta.h
+ create mode 100644 drivers/net/wireless/ap6210/dhd_bus.h
+ create mode 100644 drivers/net/wireless/ap6210/dhd_cdc.c
+ create mode 100644 drivers/net/wireless/ap6210/dhd_cfg80211.c
+ create mode 100644 drivers/net/wireless/ap6210/dhd_cfg80211.h
+ create mode 100644 drivers/net/wireless/ap6210/dhd_common.c
+ create mode 100644 drivers/net/wireless/ap6210/dhd_custom_gpio.c
+ create mode 100644 drivers/net/wireless/ap6210/dhd_dbg.h
+ create mode 100644 drivers/net/wireless/ap6210/dhd_gpio.c
+ create mode 100644 drivers/net/wireless/ap6210/dhd_ip.c
+ create mode 100644 drivers/net/wireless/ap6210/dhd_ip.h
+ create mode 100644 drivers/net/wireless/ap6210/dhd_linux.c
+ create mode 100644 drivers/net/wireless/ap6210/dhd_linux_sched.c
+ create mode 100644 drivers/net/wireless/ap6210/dhd_pno.c
+ create mode 100644 drivers/net/wireless/ap6210/dhd_pno.h
+ create mode 100644 drivers/net/wireless/ap6210/dhd_proto.h
+ create mode 100644 drivers/net/wireless/ap6210/dhd_sdio.c
+ create mode 100644 drivers/net/wireless/ap6210/dhd_wlfc.c
+ create mode 100644 drivers/net/wireless/ap6210/dhd_wlfc.h
+ create mode 100644 drivers/net/wireless/ap6210/dngl_stats.h
+ create mode 100644 drivers/net/wireless/ap6210/dngl_wlhdr.h
+ create mode 100644 drivers/net/wireless/ap6210/hndpmu.c
+ create mode 100644 drivers/net/wireless/ap6210/include/Makefile
+ create mode 100644 drivers/net/wireless/ap6210/include/aidmp.h
+ create mode 100644 drivers/net/wireless/ap6210/include/bcm_cfg.h
+ create mode 100644 drivers/net/wireless/ap6210/include/bcm_mpool_pub.h
+ create mode 100644 drivers/net/wireless/ap6210/include/bcmcdc.h
+ create mode 100644 drivers/net/wireless/ap6210/include/bcmdefs.h
+ create mode 100644 drivers/net/wireless/ap6210/include/bcmdevs.h
+ create mode 100644 drivers/net/wireless/ap6210/include/bcmendian.h
+ create mode 100644 drivers/net/wireless/ap6210/include/bcmpcispi.h
+ create mode 100644 drivers/net/wireless/ap6210/include/bcmperf.h
+ create mode 100644 drivers/net/wireless/ap6210/include/bcmsdbus.h
+ create mode 100644 drivers/net/wireless/ap6210/include/bcmsdh.h
+ create mode 100644 drivers/net/wireless/ap6210/include/bcmsdh_sdmmc.h
+ create mode 100644 drivers/net/wireless/ap6210/include/bcmsdpcm.h
+ create mode 100644 drivers/net/wireless/ap6210/include/bcmsdspi.h
+ create mode 100644 drivers/net/wireless/ap6210/include/bcmsdstd.h
+ create mode 100644 drivers/net/wireless/ap6210/include/bcmspi.h
+ create mode 100644 drivers/net/wireless/ap6210/include/bcmutils.h
+ create mode 100644 drivers/net/wireless/ap6210/include/bcmwifi_channels.h
+ create mode 100644 drivers/net/wireless/ap6210/include/bcmwifi_rates.h
+ create mode 100644 drivers/net/wireless/ap6210/include/dhdioctl.h
+ create mode 100644 drivers/net/wireless/ap6210/include/epivers.h
+ create mode 100644 drivers/net/wireless/ap6210/include/hndpmu.h
+ create mode 100644 drivers/net/wireless/ap6210/include/hndrte_armtrap.h
+ create mode 100644 drivers/net/wireless/ap6210/include/hndrte_cons.h
+ create mode 100644 drivers/net/wireless/ap6210/include/hndsoc.h
+ create mode 100644 drivers/net/wireless/ap6210/include/linux_osl.h
+ create mode 100644 drivers/net/wireless/ap6210/include/linuxver.h
+ create mode 100644 drivers/net/wireless/ap6210/include/miniopt.h
+ create mode 100644 drivers/net/wireless/ap6210/include/msgtrace.h
+ create mode 100644 drivers/net/wireless/ap6210/include/osl.h
+ create mode 100644 drivers/net/wireless/ap6210/include/packed_section_end.h
+ create mode 100644 drivers/net/wireless/ap6210/include/packed_section_start.h
+ create mode 100644 drivers/net/wireless/ap6210/include/pcicfg.h
+ create mode 100644 drivers/net/wireless/ap6210/include/proto/802.11.h
+ create mode 100644 drivers/net/wireless/ap6210/include/proto/802.11_bta.h
+ create mode 100644 drivers/net/wireless/ap6210/include/proto/802.11e.h
+ create mode 100644 drivers/net/wireless/ap6210/include/proto/802.1d.h
+ create mode 100644 drivers/net/wireless/ap6210/include/proto/bcmeth.h
+ create mode 100644 drivers/net/wireless/ap6210/include/proto/bcmevent.h
+ create mode 100644 drivers/net/wireless/ap6210/include/proto/bcmip.h
+ create mode 100644 drivers/net/wireless/ap6210/include/proto/bt_amp_hci.h
+ create mode 100644 drivers/net/wireless/ap6210/include/proto/eapol.h
+ create mode 100644 drivers/net/wireless/ap6210/include/proto/ethernet.h
+ create mode 100644 drivers/net/wireless/ap6210/include/proto/p2p.h
+ create mode 100644 drivers/net/wireless/ap6210/include/proto/sdspi.h
+ create mode 100644 drivers/net/wireless/ap6210/include/proto/vlan.h
+ create mode 100644 drivers/net/wireless/ap6210/include/proto/wpa.h
+ create mode 100644 drivers/net/wireless/ap6210/include/sbchipc.h
+ create mode 100644 drivers/net/wireless/ap6210/include/sbconfig.h
+ create mode 100644 drivers/net/wireless/ap6210/include/sbhnddma.h
+ create mode 100644 drivers/net/wireless/ap6210/include/sbpcmcia.h
+ create mode 100644 drivers/net/wireless/ap6210/include/sbsdio.h
+ create mode 100644 drivers/net/wireless/ap6210/include/sbsdpcmdev.h
+ create mode 100644 drivers/net/wireless/ap6210/include/sbsocram.h
+ create mode 100644 drivers/net/wireless/ap6210/include/sdio.h
+ create mode 100644 drivers/net/wireless/ap6210/include/sdioh.h
+ create mode 100644 drivers/net/wireless/ap6210/include/sdiovar.h
+ create mode 100644 drivers/net/wireless/ap6210/include/siutils.h
+ create mode 100644 drivers/net/wireless/ap6210/include/trxhdr.h
+ create mode 100644 drivers/net/wireless/ap6210/include/typedefs.h
+ create mode 100644 drivers/net/wireless/ap6210/include/wlfc_proto.h
+ create mode 100644 drivers/net/wireless/ap6210/include/wlioctl.h
+ create mode 100644 drivers/net/wireless/ap6210/linux_osl.c
+ create mode 100644 drivers/net/wireless/ap6210/sbutils.c
+ create mode 100644 drivers/net/wireless/ap6210/siutils.c
+ create mode 100644 drivers/net/wireless/ap6210/siutils_priv.h
+ create mode 100644 drivers/net/wireless/ap6210/uamp_api.h
+ create mode 100644 drivers/net/wireless/ap6210/wl_android.c
+ create mode 100644 drivers/net/wireless/ap6210/wl_android.h
+ create mode 100644 drivers/net/wireless/ap6210/wl_cfg80211.c
+ create mode 100644 drivers/net/wireless/ap6210/wl_cfg80211.h
+ create mode 100644 drivers/net/wireless/ap6210/wl_cfgp2p.c
+ create mode 100644 drivers/net/wireless/ap6210/wl_cfgp2p.h
+ create mode 100644 drivers/net/wireless/ap6210/wl_iw.c
+ create mode 100644 drivers/net/wireless/ap6210/wl_iw.h
+ create mode 100644 drivers/net/wireless/ap6210/wl_linux_mon.c
+ create mode 100644 drivers/net/wireless/ap6210/wldev_common.c
+ create mode 100644 drivers/net/wireless/ap6210/wldev_common.h
+ create mode 100644 firmware/ap6210/bcm20710a1.hcd.ihex
+ create mode 100644 firmware/ap6210/fw_bcm40181a2.bin.ihex
+ create mode 100644 firmware/ap6210/fw_bcm40181a2_apsta.bin.ihex
+ create mode 100644 firmware/ap6210/fw_bcm40181a2_p2p.bin.ihex
+ create mode 100644 firmware/ap6210/nvram_ap6210.txt.ihex
+patching file drivers/net/wireless/Kconfig
+Hunk #1 succeeded at 278 with fuzz 1.
+patching file drivers/net/wireless/Makefile
+Hunk #1 succeeded at 65 with fuzz 1.
+patching file drivers/net/wireless/ap6211/Kconfig
+patching file drivers/net/wireless/ap6211/Makefile
+patching file drivers/net/wireless/ap6211/aiutils.c
+patching file drivers/net/wireless/ap6211/ap6211.h
+patching file drivers/net/wireless/ap6211/ap6211_gpio.h
+patching file drivers/net/wireless/ap6211/ap6211_gpio_bt.c
+patching file drivers/net/wireless/ap6211/ap6211_gpio_wifi.c
+patching file drivers/net/wireless/ap6211/bcmevent.c
+patching file drivers/net/wireless/ap6211/bcmsdh.c
+patching file drivers/net/wireless/ap6211/bcmsdh_linux.c
+patching file drivers/net/wireless/ap6211/bcmsdh_sdmmc.c
+patching file drivers/net/wireless/ap6211/bcmsdh_sdmmc_linux.c
+patching file drivers/net/wireless/ap6211/bcmutils.c
+patching file drivers/net/wireless/ap6211/bcmwifi_channels.c
+patching file drivers/net/wireless/ap6211/dhd.h
+patching file drivers/net/wireless/ap6211/dhd_bta.c
+patching file drivers/net/wireless/ap6211/dhd_bta.h
+patching file drivers/net/wireless/ap6211/dhd_bus.h
+patching file drivers/net/wireless/ap6211/dhd_cdc.c
+patching file drivers/net/wireless/ap6211/dhd_cfg80211.c
+patching file drivers/net/wireless/ap6211/dhd_cfg80211.h
+patching file drivers/net/wireless/ap6211/dhd_common.c
+patching file drivers/net/wireless/ap6211/dhd_custom_gpio.c
+patching file drivers/net/wireless/ap6211/dhd_dbg.h
+patching file drivers/net/wireless/ap6211/dhd_gpio.c
+patching file drivers/net/wireless/ap6211/dhd_ip.c
+patching file drivers/net/wireless/ap6211/dhd_ip.h
+patching file drivers/net/wireless/ap6211/dhd_linux.c
+patching file drivers/net/wireless/ap6211/dhd_linux_sched.c
+patching file drivers/net/wireless/ap6211/dhd_pno.c
+patching file drivers/net/wireless/ap6211/dhd_pno.h
+patching file drivers/net/wireless/ap6211/dhd_proto.h
+patching file drivers/net/wireless/ap6211/dhd_sdio.c
+patching file drivers/net/wireless/ap6211/dhd_wlfc.c
+patching file drivers/net/wireless/ap6211/dhd_wlfc.h
+patching file drivers/net/wireless/ap6211/dngl_stats.h
+patching file drivers/net/wireless/ap6211/dngl_wlhdr.h
+patching file drivers/net/wireless/ap6211/hndpmu.c
+patching file drivers/net/wireless/ap6211/include/Makefile
+patching file drivers/net/wireless/ap6211/include/aidmp.h
+patching file drivers/net/wireless/ap6211/include/bcm_cfg.h
+patching file drivers/net/wireless/ap6211/include/bcm_mpool_pub.h
+patching file drivers/net/wireless/ap6211/include/bcmcdc.h
+patching file drivers/net/wireless/ap6211/include/bcmdefs.h
+patching file drivers/net/wireless/ap6211/include/bcmdevs.h
+patching file drivers/net/wireless/ap6211/include/bcmendian.h
+patching file drivers/net/wireless/ap6211/include/bcmpcispi.h
+patching file drivers/net/wireless/ap6211/include/bcmperf.h
+patching file drivers/net/wireless/ap6211/include/bcmsdbus.h
+patching file drivers/net/wireless/ap6211/include/bcmsdh.h
+patching file drivers/net/wireless/ap6211/include/bcmsdh_sdmmc.h
+patching file drivers/net/wireless/ap6211/include/bcmsdpcm.h
+patching file drivers/net/wireless/ap6211/include/bcmsdspi.h
+patching file drivers/net/wireless/ap6211/include/bcmsdstd.h
+patching file drivers/net/wireless/ap6211/include/bcmspi.h
+patching file drivers/net/wireless/ap6211/include/bcmutils.h
+patching file drivers/net/wireless/ap6211/include/bcmwifi_channels.h
+patching file drivers/net/wireless/ap6211/include/bcmwifi_rates.h
+patching file drivers/net/wireless/ap6211/include/dhdioctl.h
+patching file drivers/net/wireless/ap6211/include/epivers.h
+patching file drivers/net/wireless/ap6211/include/hndpmu.h
+patching file drivers/net/wireless/ap6211/include/hndrte_armtrap.h
+patching file drivers/net/wireless/ap6211/include/hndrte_cons.h
+patching file drivers/net/wireless/ap6211/include/hndsoc.h
+patching file drivers/net/wireless/ap6211/include/linux_osl.h
+patching file drivers/net/wireless/ap6211/include/linuxver.h
+patching file drivers/net/wireless/ap6211/include/miniopt.h
+patching file drivers/net/wireless/ap6211/include/msgtrace.h
+patching file drivers/net/wireless/ap6211/include/osl.h
+patching file drivers/net/wireless/ap6211/include/packed_section_end.h
+patching file drivers/net/wireless/ap6211/include/packed_section_start.h
+patching file drivers/net/wireless/ap6211/include/pcicfg.h
+patching file drivers/net/wireless/ap6211/include/proto/802.11.h
+patching file drivers/net/wireless/ap6211/include/proto/802.11_bta.h
+patching file drivers/net/wireless/ap6211/include/proto/802.11e.h
+patching file drivers/net/wireless/ap6211/include/proto/802.1d.h
+patching file drivers/net/wireless/ap6211/include/proto/bcmeth.h
+patching file drivers/net/wireless/ap6211/include/proto/bcmevent.h
+patching file drivers/net/wireless/ap6211/include/proto/bcmip.h
+patching file drivers/net/wireless/ap6211/include/proto/bt_amp_hci.h
+patching file drivers/net/wireless/ap6211/include/proto/eapol.h
+patching file drivers/net/wireless/ap6211/include/proto/ethernet.h
+patching file drivers/net/wireless/ap6211/include/proto/p2p.h
+patching file drivers/net/wireless/ap6211/include/proto/sdspi.h
+patching file drivers/net/wireless/ap6211/include/proto/vlan.h
+patching file drivers/net/wireless/ap6211/include/proto/wpa.h
+patching file drivers/net/wireless/ap6211/include/sbchipc.h
+patching file drivers/net/wireless/ap6211/include/sbconfig.h
+patching file drivers/net/wireless/ap6211/include/sbhnddma.h
+patching file drivers/net/wireless/ap6211/include/sbpcmcia.h
+patching file drivers/net/wireless/ap6211/include/sbsdio.h
+patching file drivers/net/wireless/ap6211/include/sbsdpcmdev.h
+patching file drivers/net/wireless/ap6211/include/sbsocram.h
+patching file drivers/net/wireless/ap6211/include/sdio.h
+patching file drivers/net/wireless/ap6211/include/sdioh.h
+patching file drivers/net/wireless/ap6211/include/sdiovar.h
+patching file drivers/net/wireless/ap6211/include/siutils.h
+patching file drivers/net/wireless/ap6211/include/trxhdr.h
+patching file drivers/net/wireless/ap6211/include/typedefs.h
+patching file drivers/net/wireless/ap6211/include/wlfc_proto.h
+patching file drivers/net/wireless/ap6211/include/wlioctl.h
+patching file drivers/net/wireless/ap6211/linux_osl.c
+patching file drivers/net/wireless/ap6211/sbutils.c
+patching file drivers/net/wireless/ap6211/siutils.c
+patching file drivers/net/wireless/ap6211/siutils_priv.h
+patching file drivers/net/wireless/ap6211/uamp_api.h
+patching file drivers/net/wireless/ap6211/wl_android.c
+patching file drivers/net/wireless/ap6211/wl_android.h
+patching file drivers/net/wireless/ap6211/wl_cfg80211.c
+patching file drivers/net/wireless/ap6211/wl_cfg80211.h
+patching file drivers/net/wireless/ap6211/wl_cfgp2p.c
+patching file drivers/net/wireless/ap6211/wl_cfgp2p.h
+patching file drivers/net/wireless/ap6211/wl_iw.c
+patching file drivers/net/wireless/ap6211/wl_iw.h
+patching file drivers/net/wireless/ap6211/wl_linux_mon.c
+patching file drivers/net/wireless/ap6211/wldev_common.c
+patching file drivers/net/wireless/ap6211/wldev_common.h
+[sunxi-3.4_like_armbian 81f3563] Applied patch: 'sun7i-default/0031-ap6211_module-bananapro.patch'
+ 120 files changed, 84427 insertions(+)
+ create mode 100644 drivers/net/wireless/ap6211/Kconfig
+ create mode 100644 drivers/net/wireless/ap6211/Makefile
+ create mode 100644 drivers/net/wireless/ap6211/aiutils.c
+ create mode 100644 drivers/net/wireless/ap6211/ap6211.h
+ create mode 100644 drivers/net/wireless/ap6211/ap6211_gpio.h
+ create mode 100644 drivers/net/wireless/ap6211/ap6211_gpio_bt.c
+ create mode 100644 drivers/net/wireless/ap6211/ap6211_gpio_wifi.c
+ create mode 100644 drivers/net/wireless/ap6211/bcmevent.c
+ create mode 100644 drivers/net/wireless/ap6211/bcmsdh.c
+ create mode 100644 drivers/net/wireless/ap6211/bcmsdh_linux.c
+ create mode 100644 drivers/net/wireless/ap6211/bcmsdh_sdmmc.c
+ create mode 100644 drivers/net/wireless/ap6211/bcmsdh_sdmmc_linux.c
+ create mode 100644 drivers/net/wireless/ap6211/bcmutils.c
+ create mode 100644 drivers/net/wireless/ap6211/bcmwifi_channels.c
+ create mode 100644 drivers/net/wireless/ap6211/dhd.h
+ create mode 100644 drivers/net/wireless/ap6211/dhd_bta.c
+ create mode 100644 drivers/net/wireless/ap6211/dhd_bta.h
+ create mode 100644 drivers/net/wireless/ap6211/dhd_bus.h
+ create mode 100644 drivers/net/wireless/ap6211/dhd_cdc.c
+ create mode 100644 drivers/net/wireless/ap6211/dhd_cfg80211.c
+ create mode 100644 drivers/net/wireless/ap6211/dhd_cfg80211.h
+ create mode 100644 drivers/net/wireless/ap6211/dhd_common.c
+ create mode 100644 drivers/net/wireless/ap6211/dhd_custom_gpio.c
+ create mode 100644 drivers/net/wireless/ap6211/dhd_dbg.h
+ create mode 100644 drivers/net/wireless/ap6211/dhd_gpio.c
+ create mode 100644 drivers/net/wireless/ap6211/dhd_ip.c
+ create mode 100644 drivers/net/wireless/ap6211/dhd_ip.h
+ create mode 100644 drivers/net/wireless/ap6211/dhd_linux.c
+ create mode 100644 drivers/net/wireless/ap6211/dhd_linux_sched.c
+ create mode 100644 drivers/net/wireless/ap6211/dhd_pno.c
+ create mode 100644 drivers/net/wireless/ap6211/dhd_pno.h
+ create mode 100644 drivers/net/wireless/ap6211/dhd_proto.h
+ create mode 100644 drivers/net/wireless/ap6211/dhd_sdio.c
+ create mode 100644 drivers/net/wireless/ap6211/dhd_wlfc.c
+ create mode 100644 drivers/net/wireless/ap6211/dhd_wlfc.h
+ create mode 100644 drivers/net/wireless/ap6211/dngl_stats.h
+ create mode 100644 drivers/net/wireless/ap6211/dngl_wlhdr.h
+ create mode 100644 drivers/net/wireless/ap6211/hndpmu.c
+ create mode 100644 drivers/net/wireless/ap6211/include/Makefile
+ create mode 100644 drivers/net/wireless/ap6211/include/aidmp.h
+ create mode 100644 drivers/net/wireless/ap6211/include/bcm_cfg.h
+ create mode 100644 drivers/net/wireless/ap6211/include/bcm_mpool_pub.h
+ create mode 100644 drivers/net/wireless/ap6211/include/bcmcdc.h
+ create mode 100644 drivers/net/wireless/ap6211/include/bcmdefs.h
+ create mode 100644 drivers/net/wireless/ap6211/include/bcmdevs.h
+ create mode 100644 drivers/net/wireless/ap6211/include/bcmendian.h
+ create mode 100644 drivers/net/wireless/ap6211/include/bcmpcispi.h
+ create mode 100644 drivers/net/wireless/ap6211/include/bcmperf.h
+ create mode 100644 drivers/net/wireless/ap6211/include/bcmsdbus.h
+ create mode 100644 drivers/net/wireless/ap6211/include/bcmsdh.h
+ create mode 100644 drivers/net/wireless/ap6211/include/bcmsdh_sdmmc.h
+ create mode 100644 drivers/net/wireless/ap6211/include/bcmsdpcm.h
+ create mode 100644 drivers/net/wireless/ap6211/include/bcmsdspi.h
+ create mode 100644 drivers/net/wireless/ap6211/include/bcmsdstd.h
+ create mode 100644 drivers/net/wireless/ap6211/include/bcmspi.h
+ create mode 100644 drivers/net/wireless/ap6211/include/bcmutils.h
+ create mode 100644 drivers/net/wireless/ap6211/include/bcmwifi_channels.h
+ create mode 100644 drivers/net/wireless/ap6211/include/bcmwifi_rates.h
+ create mode 100644 drivers/net/wireless/ap6211/include/dhdioctl.h
+ create mode 100644 drivers/net/wireless/ap6211/include/epivers.h
+ create mode 100644 drivers/net/wireless/ap6211/include/hndpmu.h
+ create mode 100644 drivers/net/wireless/ap6211/include/hndrte_armtrap.h
+ create mode 100644 drivers/net/wireless/ap6211/include/hndrte_cons.h
+ create mode 100644 drivers/net/wireless/ap6211/include/hndsoc.h
+ create mode 100644 drivers/net/wireless/ap6211/include/linux_osl.h
+ create mode 100644 drivers/net/wireless/ap6211/include/linuxver.h
+ create mode 100644 drivers/net/wireless/ap6211/include/miniopt.h
+ create mode 100644 drivers/net/wireless/ap6211/include/msgtrace.h
+ create mode 100644 drivers/net/wireless/ap6211/include/osl.h
+ create mode 100644 drivers/net/wireless/ap6211/include/packed_section_end.h
+ create mode 100644 drivers/net/wireless/ap6211/include/packed_section_start.h
+ create mode 100644 drivers/net/wireless/ap6211/include/pcicfg.h
+ create mode 100644 drivers/net/wireless/ap6211/include/proto/802.11.h
+ create mode 100644 drivers/net/wireless/ap6211/include/proto/802.11_bta.h
+ create mode 100644 drivers/net/wireless/ap6211/include/proto/802.11e.h
+ create mode 100644 drivers/net/wireless/ap6211/include/proto/802.1d.h
+ create mode 100644 drivers/net/wireless/ap6211/include/proto/bcmeth.h
+ create mode 100644 drivers/net/wireless/ap6211/include/proto/bcmevent.h
+ create mode 100644 drivers/net/wireless/ap6211/include/proto/bcmip.h
+ create mode 100644 drivers/net/wireless/ap6211/include/proto/bt_amp_hci.h
+ create mode 100644 drivers/net/wireless/ap6211/include/proto/eapol.h
+ create mode 100644 drivers/net/wireless/ap6211/include/proto/ethernet.h
+ create mode 100644 drivers/net/wireless/ap6211/include/proto/p2p.h
+ create mode 100644 drivers/net/wireless/ap6211/include/proto/sdspi.h
+ create mode 100644 drivers/net/wireless/ap6211/include/proto/vlan.h
+ create mode 100644 drivers/net/wireless/ap6211/include/proto/wpa.h
+ create mode 100644 drivers/net/wireless/ap6211/include/sbchipc.h
+ create mode 100644 drivers/net/wireless/ap6211/include/sbconfig.h
+ create mode 100644 drivers/net/wireless/ap6211/include/sbhnddma.h
+ create mode 100644 drivers/net/wireless/ap6211/include/sbpcmcia.h
+ create mode 100644 drivers/net/wireless/ap6211/include/sbsdio.h
+ create mode 100644 drivers/net/wireless/ap6211/include/sbsdpcmdev.h
+ create mode 100644 drivers/net/wireless/ap6211/include/sbsocram.h
+ create mode 100644 drivers/net/wireless/ap6211/include/sdio.h
+ create mode 100644 drivers/net/wireless/ap6211/include/sdioh.h
+ create mode 100644 drivers/net/wireless/ap6211/include/sdiovar.h
+ create mode 100644 drivers/net/wireless/ap6211/include/siutils.h
+ create mode 100644 drivers/net/wireless/ap6211/include/trxhdr.h
+ create mode 100644 drivers/net/wireless/ap6211/include/typedefs.h
+ create mode 100644 drivers/net/wireless/ap6211/include/wlfc_proto.h
+ create mode 100644 drivers/net/wireless/ap6211/include/wlioctl.h
+ create mode 100644 drivers/net/wireless/ap6211/linux_osl.c
+ create mode 100644 drivers/net/wireless/ap6211/sbutils.c
+ create mode 100644 drivers/net/wireless/ap6211/siutils.c
+ create mode 100644 drivers/net/wireless/ap6211/siutils_priv.h
+ create mode 100644 drivers/net/wireless/ap6211/uamp_api.h
+ create mode 100644 drivers/net/wireless/ap6211/wl_android.c
+ create mode 100644 drivers/net/wireless/ap6211/wl_android.h
+ create mode 100644 drivers/net/wireless/ap6211/wl_cfg80211.c
+ create mode 100644 drivers/net/wireless/ap6211/wl_cfg80211.h
+ create mode 100644 drivers/net/wireless/ap6211/wl_cfgp2p.c
+ create mode 100644 drivers/net/wireless/ap6211/wl_cfgp2p.h
+ create mode 100644 drivers/net/wireless/ap6211/wl_iw.c
+ create mode 100644 drivers/net/wireless/ap6211/wl_iw.h
+ create mode 100644 drivers/net/wireless/ap6211/wl_linux_mon.c
+ create mode 100644 drivers/net/wireless/ap6211/wldev_common.c
+ create mode 100644 drivers/net/wireless/ap6211/wldev_common.h
+patching file drivers/staging/media/lirc/Kconfig
+patching file drivers/staging/media/lirc/Makefile
+patching file drivers/staging/media/lirc/lirc_gpio.c
+patching file drivers/staging/media/lirc/sunxi-lirc.c
+[sunxi-3.4_like_armbian c2adc59] Applied patch: 'sun7i-default/0050-lircgpio_and_raw.patch'
+ 5 files changed, 1698 insertions(+)
+ create mode 100644 drivers/staging/media/lirc/lirc_gpio.c
+ create mode 100644 drivers/staging/media/lirc/sunxi-lirc.c
+patching file arch/arm/mach-sun7i/cpu-freq/cpu-freq.c
+[sunxi-3.4_like_armbian 7d21419] Applied patch: 'sun7i-default/0061-w1-fix.patch'
+ 2 files changed, 25 insertions(+), 26 deletions(-)
+patching file sound/soc/sunxi/spdif/sunxi_spdif.c
+Hunk #3 succeeded at 266 (offset -1 lines).
+patching file sound/soc/sunxi/spdif/sunxi_spdma.c
+[sunxi-3.4_like_armbian 22dafe6] Applied patch: 'sun7i-default/1017-SPDIF-experiments.patch'
+ 3 files changed, 51 insertions(+), 62 deletions(-)
+patching file sound/soc/sunxi/spdif/sunxi_spdif.c
+Hunk #1 succeeded at 267 (offset -1 lines).
+[sunxi-3.4_like_armbian 1cab5d8] Applied patch: 'sun7i-default/1018-Some-magic.patch'
+ 2 files changed, 5 insertions(+)
+patching file drivers/mtd/devices/m25p80.c
+[sunxi-3.4_like_armbian 1c604d9] Applied patch: 'sun7i-default/add-w25q128-spi-nor.patch'
+ 2 files changed, 4 insertions(+)
+patching file scripts/package/builddeb
+Hunk #1 succeeded at 142 (offset -76 lines).
+[sunxi-3.4_like_armbian 345254c] Applied patch: 'sun7i-default/bash_to_afterinstall.patch'
+ 2 files changed, 5 insertions(+), 1 deletion(-)
+patching file drivers/media/video/sunxi/sunxi_cedar.c
+[sunxi-3.4_like_armbian 21aa60f] Applied patch: 'sun7i-default/cedar-remove-insecure-code.patch'
+ 2 files changed, 3 insertions(+), 17 deletions(-)
+patching file drivers/mmc/core/mmc.c
+patching file drivers/mmc/host/sunxi-mci.c
+[sunxi-3.4_like_armbian 9f67a57] Applied patch: 'sun7i-default/enable_emmc5_support.patch'
+ 3 files changed, 6 insertions(+), 10 deletions(-)
+patching file drivers/watchdog/Kconfig
+[sunxi-3.4_like_armbian 3e7e16a] Applied patch: 'sun7i-default/enable_watchdog_a20.patch'
+ 2 files changed, 5 insertions(+), 2 deletions(-)
+patching file drivers/video/Kconfig
+patching file drivers/video/Makefile
+patching file drivers/video/fbtft/Kconfig
+patching file drivers/video/fbtft/Makefile
+patching file drivers/video/fbtft/README
+patching file drivers/video/fbtft/fb_bd663474.c
+patching file drivers/video/fbtft/fb_hx8340bn.c
+patching file drivers/video/fbtft/fb_hx8347d.c
+patching file drivers/video/fbtft/fb_hx8353d.c
+patching file drivers/video/fbtft/fb_ili9320.c
+patching file drivers/video/fbtft/fb_ili9325.c
+patching file drivers/video/fbtft/fb_ili9340.c
+patching file drivers/video/fbtft/fb_ili9341.c
+patching file drivers/video/fbtft/fb_ili9486.c
+patching file drivers/video/fbtft/fb_pcd8544.c
+patching file drivers/video/fbtft/fb_ra8875.c
+patching file drivers/video/fbtft/fb_s6d02a1.c
+patching file drivers/video/fbtft/fb_s6d1121.c
+patching file drivers/video/fbtft/fb_ssd1289.c
+patching file drivers/video/fbtft/fb_ssd1306.c
+patching file drivers/video/fbtft/fb_ssd1331.c
+patching file drivers/video/fbtft/fb_ssd1351.c
+patching file drivers/video/fbtft/fb_st7735r.c
+patching file drivers/video/fbtft/fb_tinylcd.c
+patching file drivers/video/fbtft/fb_tls8204.c
+patching file drivers/video/fbtft/fb_upd161704.c
+patching file drivers/video/fbtft/fb_watterott.c
+patching file drivers/video/fbtft/fbtft-bus.c
+patching file drivers/video/fbtft/fbtft-core.c
+patching file drivers/video/fbtft/fbtft-io.c
+patching file drivers/video/fbtft/fbtft-sysfs.c
+patching file drivers/video/fbtft/fbtft.h
+patching file drivers/video/fbtft/fbtft_device.c
+patching file drivers/video/fbtft/flexfb.c
+[sunxi-3.4_like_armbian 79f701e] Applied patch: 'sun7i-default/fbtft_for_older.patch'
+ 35 files changed, 9327 insertions(+)
+ create mode 100644 drivers/video/fbtft/Kconfig
+ create mode 100644 drivers/video/fbtft/Makefile
+ create mode 100644 drivers/video/fbtft/README
+ create mode 100644 drivers/video/fbtft/fb_bd663474.c
+ create mode 100644 drivers/video/fbtft/fb_hx8340bn.c
+ create mode 100644 drivers/video/fbtft/fb_hx8347d.c
+ create mode 100644 drivers/video/fbtft/fb_hx8353d.c
+ create mode 100644 drivers/video/fbtft/fb_ili9320.c
+ create mode 100644 drivers/video/fbtft/fb_ili9325.c
+ create mode 100644 drivers/video/fbtft/fb_ili9340.c
+ create mode 100644 drivers/video/fbtft/fb_ili9341.c
+ create mode 100644 drivers/video/fbtft/fb_ili9486.c
+ create mode 100644 drivers/video/fbtft/fb_pcd8544.c
+ create mode 100644 drivers/video/fbtft/fb_ra8875.c
+ create mode 100644 drivers/video/fbtft/fb_s6d02a1.c
+ create mode 100644 drivers/video/fbtft/fb_s6d1121.c
+ create mode 100644 drivers/video/fbtft/fb_ssd1289.c
+ create mode 100644 drivers/video/fbtft/fb_ssd1306.c
+ create mode 100644 drivers/video/fbtft/fb_ssd1331.c
+ create mode 100644 drivers/video/fbtft/fb_ssd1351.c
+ create mode 100644 drivers/video/fbtft/fb_st7735r.c
+ create mode 100644 drivers/video/fbtft/fb_tinylcd.c
+ create mode 100644 drivers/video/fbtft/fb_tls8204.c
+ create mode 100644 drivers/video/fbtft/fb_upd161704.c
+ create mode 100644 drivers/video/fbtft/fb_watterott.c
+ create mode 100644 drivers/video/fbtft/fbtft-bus.c
+ create mode 100644 drivers/video/fbtft/fbtft-core.c
+ create mode 100644 drivers/video/fbtft/fbtft-io.c
+ create mode 100644 drivers/video/fbtft/fbtft-sysfs.c
+ create mode 100644 drivers/video/fbtft/fbtft.h
+ create mode 100644 drivers/video/fbtft/fbtft_device.c
+ create mode 100644 drivers/video/fbtft/flexfb.c
+patching file drivers/mmc/core/mmc.c
+Hunk #1 succeeded at 474 (offset -6 lines).
+[sunxi-3.4_like_armbian 7927258] Applied patch: 'sun7i-default/fix_emmc_hpi.patch'
+ 2 files changed, 36 insertions(+), 15 deletions(-)
+patching file arch/arm/include/asm/ftrace.h
+patching file arch/arm/kernel/return_address.c
+patching file drivers/net/wireless/rtl8188eu/include/ieee80211.h
+patching file drivers/net/wireless/rtl8189es/include/ieee80211.h
+patching file drivers/net/wireless/rtl8192cu/include/ieee80211.h
+patching file drivers/staging/rtl8712/ieee80211.h
+patching file drivers/net/wireless/rtl8723as/include/ieee80211.h
+[sunxi-3.4_like_armbian 47bba09] Applied patch: 'sun7i-default/fix-gcc5.patch'
+ 8 files changed, 22 insertions(+), 18 deletions(-)
+patching file drivers/misc/Kconfig
+patching file drivers/misc/Makefile
+patching file drivers/misc/olinuxino-lcd.c
+[sunxi-3.4_like_armbian f161534] Applied patch: 'sun7i-default/olinuxino-lcd.patch'
+ 4 files changed, 401 insertions(+)
+ create mode 100644 drivers/misc/olinuxino-lcd.c
+patching file scripts/package/builddeb
+[sunxi-3.4_like_armbian b12e72a] Applied patch: 'sun7i-default/packaging-3.4.x-DEFAULT-with-postinstall-scripts.patch'
+ 2 files changed, 178 insertions(+), 33 deletions(-)
+patching file drivers/media/dvb/dvb-usb/demod_rtl2832.c
+patching file drivers/media/dvb/dvb-usb/demod_rtl2832.h
+patching file drivers/media/dvb/dvb-usb/demod_rtl2836.c
+patching file drivers/media/dvb/dvb-usb/demod_rtl2836.h
+patching file drivers/media/dvb/dvb-usb/demod_rtl2840.c
+patching file drivers/media/dvb/dvb-usb/demod_rtl2840.h
+patching file drivers/media/dvb/dvb-usb/dtmb_demod_base.c
+patching file drivers/media/dvb/dvb-usb/dtmb_demod_base.h
+patching file drivers/media/dvb/dvb-usb/dtmb_nim_base.c
+patching file drivers/media/dvb/dvb-usb/dtmb_nim_base.h
+patching file drivers/media/dvb/dvb-usb/dvbt_demod_base.c
+patching file drivers/media/dvb/dvb-usb/dvbt_demod_base.h
+patching file drivers/media/dvb/dvb-usb/dvbt_nim_base.c
+patching file drivers/media/dvb/dvb-usb/dvbt_nim_base.h
+patching file drivers/media/dvb/dvb-usb/foundation.c
+patching file drivers/media/dvb/dvb-usb/foundation.h
+patching file drivers/media/dvb/dvb-usb/i2c_bridge.h
+patching file drivers/media/dvb/dvb-usb/math_mpi.c
+patching file drivers/media/dvb/dvb-usb/math_mpi.h
+patching file drivers/media/dvb/dvb-usb/nim_rtl2832_e4000.c
+patching file drivers/media/dvb/dvb-usb/nim_rtl2832_e4000.h
+patching file drivers/media/dvb/dvb-usb/nim_rtl2832_fc0012.c
+patching file drivers/media/dvb/dvb-usb/nim_rtl2832_fc0012.h
+patching file drivers/media/dvb/dvb-usb/nim_rtl2832_fc0013.c
+patching file drivers/media/dvb/dvb-usb/nim_rtl2832_fc0013.h
+patching file drivers/media/dvb/dvb-usb/nim_rtl2832_fc2580.c
+patching file drivers/media/dvb/dvb-usb/nim_rtl2832_fc2580.h
+patching file drivers/media/dvb/dvb-usb/nim_rtl2832_max3543.c
+patching file drivers/media/dvb/dvb-usb/nim_rtl2832_max3543.h
+patching file drivers/media/dvb/dvb-usb/nim_rtl2832_mt2063.c
+patching file drivers/media/dvb/dvb-usb/nim_rtl2832_mt2063.h
+patching file drivers/media/dvb/dvb-usb/nim_rtl2832_mt2266.c
+patching file drivers/media/dvb/dvb-usb/nim_rtl2832_mt2266.h
+patching file drivers/media/dvb/dvb-usb/nim_rtl2832_mxl5007t.c
+patching file drivers/media/dvb/dvb-usb/nim_rtl2832_mxl5007t.h
+patching file drivers/media/dvb/dvb-usb/nim_rtl2832_r820t.c
+patching file drivers/media/dvb/dvb-usb/nim_rtl2832_r820t.h
+patching file drivers/media/dvb/dvb-usb/nim_rtl2832_tda18272.c
+patching file drivers/media/dvb/dvb-usb/nim_rtl2832_tda18272.h
+patching file drivers/media/dvb/dvb-usb/nim_rtl2832_tua9001.c
+patching file drivers/media/dvb/dvb-usb/nim_rtl2832_tua9001.h
+patching file drivers/media/dvb/dvb-usb/nim_rtl2836_fc2580.c
+patching file drivers/media/dvb/dvb-usb/nim_rtl2836_fc2580.h
+patching file drivers/media/dvb/dvb-usb/nim_rtl2836_mxl5007t.c
+patching file drivers/media/dvb/dvb-usb/nim_rtl2836_mxl5007t.h
+patching file drivers/media/dvb/dvb-usb/nim_rtl2840_max3543.c
+patching file drivers/media/dvb/dvb-usb/nim_rtl2840_max3543.h
+patching file drivers/media/dvb/dvb-usb/nim_rtl2840_mt2063.c
+patching file drivers/media/dvb/dvb-usb/nim_rtl2840_mt2063.h
+patching file drivers/media/dvb/dvb-usb/qam_demod_base.c
+patching file drivers/media/dvb/dvb-usb/qam_demod_base.h
+patching file drivers/media/dvb/dvb-usb/qam_nim_base.c
+patching file drivers/media/dvb/dvb-usb/qam_nim_base.h
+patching file drivers/media/dvb/dvb-usb/rtl2832u_audio.c
+patching file drivers/media/dvb/dvb-usb/rtl2832u_audio.h
+patching file drivers/media/dvb/dvb-usb/rtl2832u.c
+patching file drivers/media/dvb/dvb-usb/rtl2832u_fe.c
+patching file drivers/media/dvb/dvb-usb/rtl2832u_fe.h
+patching file drivers/media/dvb/dvb-usb/rtl2832u.h
+patching file drivers/media/dvb/dvb-usb/rtl2832u_io.c
+patching file drivers/media/dvb/dvb-usb/rtl2832u_io.h
+patching file drivers/media/dvb/dvb-usb/tuner_base.h
+patching file drivers/media/dvb/dvb-usb/tuner_e4000.c
+patching file drivers/media/dvb/dvb-usb/tuner_e4000.h
+patching file drivers/media/dvb/dvb-usb/tuner_fc0012.c
+patching file drivers/media/dvb/dvb-usb/tuner_fc0012.h
+patching file drivers/media/dvb/dvb-usb/tuner_fc0013.c
+patching file drivers/media/dvb/dvb-usb/tuner_fc0013.h
+patching file drivers/media/dvb/dvb-usb/tuner_fc2580.c
+patching file drivers/media/dvb/dvb-usb/tuner_fc2580.h
+patching file drivers/media/dvb/dvb-usb/tuner_max3543.c
+patching file drivers/media/dvb/dvb-usb/tuner_max3543.h
+patching file drivers/media/dvb/dvb-usb/tuner_mt2063.c
+patching file drivers/media/dvb/dvb-usb/tuner_mt2063.h
+patching file drivers/media/dvb/dvb-usb/tuner_mt2266.c
+patching file drivers/media/dvb/dvb-usb/tuner_mt2266.h
+patching file drivers/media/dvb/dvb-usb/tuner_mxl5007t.c
+patching file drivers/media/dvb/dvb-usb/tuner_mxl5007t.h
+patching file drivers/media/dvb/dvb-usb/tuner_r820t.c
+patching file drivers/media/dvb/dvb-usb/tuner_r820t.h
+patching file drivers/media/dvb/dvb-usb/tuner_tda18272.c
+patching file drivers/media/dvb/dvb-usb/tuner_tda18272.h
+patching file drivers/media/dvb/dvb-usb/tuner_tua9001.c
+patching file drivers/media/dvb/dvb-usb/tuner_tua9001.h
+patching file drivers/media/dvb/dvb-usb/Kconfig
+patching file drivers/media/dvb/dvb-usb/Makefile
+[sunxi-3.4_like_armbian c9462ff] Applied patch: 'sun7i-default/rtl2832.patch'
+ 87 files changed, 107065 insertions(+)
+ create mode 100644 drivers/media/dvb/dvb-usb/demod_rtl2832.c
+ create mode 100644 drivers/media/dvb/dvb-usb/demod_rtl2832.h
+ create mode 100644 drivers/media/dvb/dvb-usb/demod_rtl2836.c
+ create mode 100644 drivers/media/dvb/dvb-usb/demod_rtl2836.h
+ create mode 100644 drivers/media/dvb/dvb-usb/demod_rtl2840.c
+ create mode 100644 drivers/media/dvb/dvb-usb/demod_rtl2840.h
+ create mode 100644 drivers/media/dvb/dvb-usb/dtmb_demod_base.c
+ create mode 100644 drivers/media/dvb/dvb-usb/dtmb_demod_base.h
+ create mode 100644 drivers/media/dvb/dvb-usb/dtmb_nim_base.c
+ create mode 100644 drivers/media/dvb/dvb-usb/dtmb_nim_base.h
+ create mode 100644 drivers/media/dvb/dvb-usb/dvbt_demod_base.c
+ create mode 100644 drivers/media/dvb/dvb-usb/dvbt_demod_base.h
+ create mode 100644 drivers/media/dvb/dvb-usb/dvbt_nim_base.c
+ create mode 100644 drivers/media/dvb/dvb-usb/dvbt_nim_base.h
+ create mode 100644 drivers/media/dvb/dvb-usb/foundation.c
+ create mode 100644 drivers/media/dvb/dvb-usb/foundation.h
+ create mode 100644 drivers/media/dvb/dvb-usb/i2c_bridge.h
+ create mode 100644 drivers/media/dvb/dvb-usb/math_mpi.c
+ create mode 100644 drivers/media/dvb/dvb-usb/math_mpi.h
+ create mode 100644 drivers/media/dvb/dvb-usb/nim_rtl2832_e4000.c
+ create mode 100644 drivers/media/dvb/dvb-usb/nim_rtl2832_e4000.h
+ create mode 100644 drivers/media/dvb/dvb-usb/nim_rtl2832_fc0012.c
+ create mode 100644 drivers/media/dvb/dvb-usb/nim_rtl2832_fc0012.h
+ create mode 100644 drivers/media/dvb/dvb-usb/nim_rtl2832_fc0013.c
+ create mode 100644 drivers/media/dvb/dvb-usb/nim_rtl2832_fc0013.h
+ create mode 100644 drivers/media/dvb/dvb-usb/nim_rtl2832_fc2580.c
+ create mode 100644 drivers/media/dvb/dvb-usb/nim_rtl2832_fc2580.h
+ create mode 100644 drivers/media/dvb/dvb-usb/nim_rtl2832_max3543.c
+ create mode 100644 drivers/media/dvb/dvb-usb/nim_rtl2832_max3543.h
+ create mode 100644 drivers/media/dvb/dvb-usb/nim_rtl2832_mt2063.c
+ create mode 100644 drivers/media/dvb/dvb-usb/nim_rtl2832_mt2063.h
+ create mode 100644 drivers/media/dvb/dvb-usb/nim_rtl2832_mt2266.c
+ create mode 100644 drivers/media/dvb/dvb-usb/nim_rtl2832_mt2266.h
+ create mode 100644 drivers/media/dvb/dvb-usb/nim_rtl2832_mxl5007t.c
+ create mode 100644 drivers/media/dvb/dvb-usb/nim_rtl2832_mxl5007t.h
+ create mode 100644 drivers/media/dvb/dvb-usb/nim_rtl2832_r820t.c
+ create mode 100644 drivers/media/dvb/dvb-usb/nim_rtl2832_r820t.h
+ create mode 100644 drivers/media/dvb/dvb-usb/nim_rtl2832_tda18272.c
+ create mode 100644 drivers/media/dvb/dvb-usb/nim_rtl2832_tda18272.h
+ create mode 100644 drivers/media/dvb/dvb-usb/nim_rtl2832_tua9001.c
+ create mode 100644 drivers/media/dvb/dvb-usb/nim_rtl2832_tua9001.h
+ create mode 100644 drivers/media/dvb/dvb-usb/nim_rtl2836_fc2580.c
+ create mode 100644 drivers/media/dvb/dvb-usb/nim_rtl2836_fc2580.h
+ create mode 100644 drivers/media/dvb/dvb-usb/nim_rtl2836_mxl5007t.c
+ create mode 100644 drivers/media/dvb/dvb-usb/nim_rtl2836_mxl5007t.h
+ create mode 100644 drivers/media/dvb/dvb-usb/nim_rtl2840_max3543.c
+ create mode 100644 drivers/media/dvb/dvb-usb/nim_rtl2840_max3543.h
+ create mode 100644 drivers/media/dvb/dvb-usb/nim_rtl2840_mt2063.c
+ create mode 100644 drivers/media/dvb/dvb-usb/nim_rtl2840_mt2063.h
+ create mode 100644 drivers/media/dvb/dvb-usb/qam_demod_base.c
+ create mode 100644 drivers/media/dvb/dvb-usb/qam_demod_base.h
+ create mode 100644 drivers/media/dvb/dvb-usb/qam_nim_base.c
+ create mode 100644 drivers/media/dvb/dvb-usb/qam_nim_base.h
+ create mode 100644 drivers/media/dvb/dvb-usb/rtl2832u.c
+ create mode 100644 drivers/media/dvb/dvb-usb/rtl2832u.h
+ create mode 100644 drivers/media/dvb/dvb-usb/rtl2832u_audio.c
+ create mode 100644 drivers/media/dvb/dvb-usb/rtl2832u_audio.h
+ create mode 100644 drivers/media/dvb/dvb-usb/rtl2832u_fe.c
+ create mode 100644 drivers/media/dvb/dvb-usb/rtl2832u_fe.h
+ create mode 100644 drivers/media/dvb/dvb-usb/rtl2832u_io.c
+ create mode 100644 drivers/media/dvb/dvb-usb/rtl2832u_io.h
+ create mode 100644 drivers/media/dvb/dvb-usb/tuner_base.h
+ create mode 100644 drivers/media/dvb/dvb-usb/tuner_e4000.c
+ create mode 100644 drivers/media/dvb/dvb-usb/tuner_e4000.h
+ create mode 100644 drivers/media/dvb/dvb-usb/tuner_fc0012.c
+ create mode 100644 drivers/media/dvb/dvb-usb/tuner_fc0012.h
+ create mode 100644 drivers/media/dvb/dvb-usb/tuner_fc0013.c
+ create mode 100644 drivers/media/dvb/dvb-usb/tuner_fc0013.h
+ create mode 100644 drivers/media/dvb/dvb-usb/tuner_fc2580.c
+ create mode 100644 drivers/media/dvb/dvb-usb/tuner_fc2580.h
+ create mode 100644 drivers/media/dvb/dvb-usb/tuner_max3543.c
+ create mode 100644 drivers/media/dvb/dvb-usb/tuner_max3543.h
+ create mode 100644 drivers/media/dvb/dvb-usb/tuner_mt2063.c
+ create mode 100644 drivers/media/dvb/dvb-usb/tuner_mt2063.h
+ create mode 100644 drivers/media/dvb/dvb-usb/tuner_mt2266.c
+ create mode 100644 drivers/media/dvb/dvb-usb/tuner_mt2266.h
+ create mode 100644 drivers/media/dvb/dvb-usb/tuner_mxl5007t.c
+ create mode 100644 drivers/media/dvb/dvb-usb/tuner_mxl5007t.h
+ create mode 100644 drivers/media/dvb/dvb-usb/tuner_r820t.c
+ create mode 100644 drivers/media/dvb/dvb-usb/tuner_r820t.h
+ create mode 100644 drivers/media/dvb/dvb-usb/tuner_tda18272.c
+ create mode 100644 drivers/media/dvb/dvb-usb/tuner_tda18272.h
+ create mode 100644 drivers/media/dvb/dvb-usb/tuner_tua9001.c
+ create mode 100644 drivers/media/dvb/dvb-usb/tuner_tua9001.h
+patching file drivers/net/can/Kconfig
+patching file drivers/net/can/Makefile
+patching file drivers/net/can/sunxi_can.c
+patching file drivers/net/can/sunxi_can.h
+[sunxi-3.4_like_armbian 0945c3b] Applied patch: 'sun7i-default/sunxi-can.patch'
+ 5 files changed, 971 insertions(+)
+ create mode 100644 drivers/net/can/sunxi_can.c
+ create mode 100644 drivers/net/can/sunxi_can.h
+patching file drivers/media/common/tuners/r848.c
+patching file drivers/media/common/tuners/r848.h
+patching file drivers/media/common/tuners/r848_priv.h
+patching file drivers/media/dvb/dvb-usb/Kconfig
+patching file drivers/media/dvb/dvb-usb/Makefile
+patching file drivers/media/dvb/dvb-usb/tbs5520.c
+patching file drivers/media/dvb/dvb-usb/tbs5520.h
+patching file drivers/media/dvb/frontends/avl6882.c
+patching file drivers/media/dvb/frontends/avl6882.h
+patching file drivers/media/dvb/frontends/avl6882_priv.h
+patching file drivers/media/dvb/frontends/AVL_Demod_Patch_DVBCFw_.h
+patching file drivers/media/dvb/frontends/AVL_Demod_Patch_DVBSxFw_.h
+patching file drivers/media/dvb/frontends/AVL_Demod_Patch_DVBTxFw_.h
+[sunxi-3.4_like_armbian 8d1b34c] Applied patch: 'sun7i-default/tbs5520.patch'
+ 14 files changed, 16957 insertions(+)
+ create mode 100644 drivers/media/common/tuners/r848.c
+ create mode 100644 drivers/media/common/tuners/r848.h
+ create mode 100644 drivers/media/common/tuners/r848_priv.h
+ create mode 100644 drivers/media/dvb/dvb-usb/tbs5520.c
+ create mode 100644 drivers/media/dvb/dvb-usb/tbs5520.h
+ create mode 100644 drivers/media/dvb/frontends/AVL_Demod_Patch_DVBCFw_.h
+ create mode 100644 drivers/media/dvb/frontends/AVL_Demod_Patch_DVBSxFw_.h
+ create mode 100644 drivers/media/dvb/frontends/AVL_Demod_Patch_DVBTxFw_.h
+ create mode 100644 drivers/media/dvb/frontends/avl6882.c
+ create mode 100644 drivers/media/dvb/frontends/avl6882.h
+ create mode 100644 drivers/media/dvb/frontends/avl6882_priv.h
