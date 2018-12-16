@@ -88,6 +88,13 @@ config SUNXI_PWM
 	  a sysfs interface at /sys/class/pwm-sunxi as well as the 
 	  kernel pwm interface. 
  
+config OLINUXINO_LCD
+	tristate "PWM driver for LCD-OLinuXino-15.6FHD
+	depends on ARCH_SUN7I
+	help
+	  This driver implements software pwm support for 
+	  OLinuXino-15.6FHD. The lcd needs two pwms: backlight and
+	  contrast.
 
 config AB8500_PWM
 	bool "AB8500 PWM support"
