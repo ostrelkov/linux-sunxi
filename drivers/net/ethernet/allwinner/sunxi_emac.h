@@ -83,7 +83,9 @@
 
 /*  PIO register  */
 #define PA_CFG0_REG        	(0x00)
+#define PC_CFG0_REG		(0x48)
 #define PD_CFG0_REG		(0x6c)
+#define PH_CFG0_REG		(0xfc)
 
 //SRAMC register
 #define SRAMC_BASE		0x01c00000

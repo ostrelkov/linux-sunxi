@@ -66,6 +66,7 @@ static int emac_used;
 static int watchdog = 5000;
 static unsigned char mac_addr[6] = {0x00};
 static char *mac_addr_param = ":";
+static __s32 emac_reset;
 module_param(watchdog, int, 0400);
 MODULE_PARM_DESC(watchdog, "transmit timeout in milliseconds");
 
@@ -368,8 +369,24 @@ void emac_sys_setup(sunxi_emac_board_info_t *db)
 
 	/* Set function for PA, if emac_used == 1 configure PA for emac, else
 	   make sure it is *not* set for emac */
-	for (i = 0; i <= 17; i++)
-		emac_gpio_pin_function(db, PA_CFG0_REG, i, 2, emac_used == 1);
+	if (sunxi_is_sun7i()) {
+		if (emac_used == 1) { // port PA
+			for (i = 0; i <= 17; i++)
+				emac_gpio_pin_function(db, PA_CFG0_REG, i, 2, 1);		  
+		} else if (emac_used == 2) { // port PH
+			for (i = 8; i <= 26; i++)
+				emac_gpio_pin_function(db, PH_CFG0_REG, i, 3, emac_used == 2);
+
+			emac_reset = gpio_request_ex("emac_para", "emac_reset");
+			if (!emac_reset)
+				printk(KERN_ERR "Failed to request emac_reset GPIO for emac driver\n");
+			else
+				gpio_write_one_pin_value(emac_reset, 1, "emac_reset");
+		}
+	} else {
+		for (i = 0; i <= 17; i++)
+			emac_gpio_pin_function(db, PA_CFG0_REG, i, 2, emac_used == 1);
+	}
 
 	/* On sun5i PD can be used instead, in this case emac_used == 2 */
 	if (sunxi_is_sun5i()) {
@@ -777,6 +794,8 @@ sunxi_emac_poll_work(struct work_struct *w)
 static void
 sunxi_emac_release_board(struct platform_device *pdev, struct sunxi_emac_board_info *db)
 {
+	//TODO release GPIO pins
+
 	/* unmap our resources */
 
 	iounmap(db->emac_vbase);
@@ -1471,6 +1490,7 @@ static void sunxi_emac_shutdown(struct net_device *dev)
 	if (reg_val & (1<<15))
 		sunxi_emac_dbg(db, 5, "phy_reset not complete. value of reg0: %x\n",
 			reg_val);
+
 	sunxi_emac_phy_write(dev, 0, 0, reg_val | (1<<11));	/* PHY POWER DOWN */
 
 	if (db->mos_pin_handler) {
@@ -1834,12 +1854,15 @@ static int __init sunxi_emac_init(void)
 		return -ENODEV;
 	}
 
-	if (emac_used == 2 && !sunxi_is_sun5i()) {
-		pr_err("Error emac_used = 2 is only supported on sun5i\n");
+	if (emac_used == 2 && !(sunxi_is_sun5i() || sunxi_is_sun7i())) {
+		pr_err("Error emac_used = 2 is only supported on sun5i or sun7i\n");
 		return -ENODEV;
 	}
 
-	pr_info("%s Using mii phy on Port%c\n", CARDNAME, 'A' + emac_used - 1);
+	if (sunxi_is_sun7i() && emac_used == 2)
+		pr_info("%s Using mii phy on Port%c\n", CARDNAME, 'H');	  
+	else 
+		pr_info("%s Using mii phy on Port%c\n", CARDNAME, 'A' + emac_used - 1);
 
 	platform_device_register(&sunxi_emac_device);
 	return platform_driver_register(&sunxi_emac_driver);
